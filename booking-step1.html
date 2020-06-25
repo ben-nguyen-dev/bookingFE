@@ -11,6 +11,7 @@
 	<title>Book Your Travel - Booking</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen,projection,print" />
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/custom.css">
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
@@ -131,51 +132,234 @@
 					<section class="three-fourth">
 						<form id="booking" method="post" action="booking-step2.html" class="booking">
 							<fieldset>
-								<h3><span>01 </span>Traveller info</h3>
+								<h3><span>01 </span>Hạng mục chỗ nghỉ</h3>
 								<div class="row twins">
 									<div class="f-item">
-										<label for="first_name">First name</label>
-										<input type="text" id="first_name" name="first_name" />
+										<label>Loại căn hộ</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>HOMESTAY</option>
+										</select>
 									</div>
 									<div class="f-item">
-										<label for="last_name">Last name</label>
-										<input type="text" id="last_name" name="last_name" />
+										<label>Số lượng chỗ nghỉ</label>
+										<select>
+											<option selected="selected">Số lượng căn hộ</option>
+											<option>Một căn hộ</option>
+											<option>Nhiều căn hộ</option>
+										</select>	
 									</div>
+								</div>
+								<h3 style="margin-top: 20px;"><span>02</span> Đăng ký chỗ nghỉ</h3>
+								<div class="row twins">
+									<div class="f-item">
+										<label for="text">Tên chỗ nghỉ </label>
+										<input type="text" id="name" name="name" />
+									</div>
+									<div class="f-item">
+										<label>Tỉnh (Thành Phố)</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>Hà Nội</option>
+											<option>Hồ Chí Minh</option>
+										</select>
+									</div>
+									<!-- <span class="info">You’ll receive a confirmation email</span> -->
 								</div>
 								
 								<div class="row twins">
 									<div class="f-item">
-										<label for="email">Email address</label>
-										<input type="email" id="email" name="email" />
-									</div>
-									<div class="f-item">
-										<label for="confirm_email">Confirm email address</label>
-										<input type="text" id="confirm_email" name="confirm_email" />
-									</div>
-									<span class="info">You’ll receive a confirmation email</span>
-								</div>
-								
-								<div class="row twins">
-									<div class="f-item">
-										<label for="address">Street Address an Number</label>
+										<label for="address">Địa chỉ</label>
 										<input type="text" id="address" name="address" />
 									</div>
+									<div class="f-item img_map">
+										<img src="./images/map.png" alt="">
+									</div>
+								</div>
+								
+								<h3 style="margin-top: 20px;"><span>03</span> Chi tiết chỗ nghỉ</h3>
+								<div class="row twins">
 									<div class="f-item">
-										<label for="city">Town / City</label>
-										<input type="text" id="city" name="city" />
+										<label for="">Số lượng phòng</label>
+										<input type="number" id="" name="" />
+									</div>
+									<div class="f-item">
+										<label for="card_number">Loại phòng</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>Một giường đôi</option>
+											<option>Một giường đôi- một giường King</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="row twins">
+									<div class="f-item">
+										<label for="">Số lượng khách có thể lưu trú</label>
+										<input type="number" id="" name="" />
+									</div>
+									<div class="f-item">
+										<label for="address">Kích thước phòng (m<sup>2</sup>)</label>
+										<input type="text" id="address" name="address" />
+									</div>
+
+									<div class="f-item checkbox">
+										<h4>Mô tả </h4>
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Safety Deposit Box</label> <br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Air Conditioning</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Desk</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Ironing Facilities</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Seating Area</label><br> <br>
+										
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Heating</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Shower</label><br> <br>
 									</div>
 								</div>
 								
 								<div class="row twins">
-									<div class="f-item">
-										<label for="zip">ZIP Code</label>
-										<input type="text" id="zip" name="zip" />
-									</div>
-									<div class="f-item">
-										<label for="country">Country</label>
-										<input type="text" id="country" name="country" />
+									<h3 style="margin-top: 20px;"><span>04</span> Tiện ích có tại chỗ nghỉ</h3>
+									<div class="f-item checkbox">
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Wifi miễn phí</label> <br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Trạm sạc xe điện</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Chỗ đậu xe trong khuôn viên</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Hồ bơi</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Điều hòa</label><br> <br>
+										
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Hệ thống sưởi</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Bồn tắm nóng/bể sục (jacuzzi)</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Sân thượng/hiên</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Sân vườn</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Phòng xông hơi</label><br> <br>
+
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Quầy bar</label><br> <br>
 									</div>
 								</div>
+
+								<h3 style="margin-top: 20px;"><span>05</span> Quy định chung</h3>
+
+								<div class="row twins">
+									<div class="f-item">
+										<label>Cho phép hút thuốc</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>Không</option>
+											<option>Có</option>
+										</select>
+									</div>
+
+									<div class="f-item">
+										<label>Cho phép đem vật nuôi</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>Không</option>
+											<option>Có</option>
+										</select>
+									</div>
+
+									<div class="f-item">
+										<label>Cho phép trẻ em</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>Không</option>
+											<option>Có</option>
+										</select>
+									</div>
+
+									<div class="f-item">
+										<label>Cho phép tiệc tùng/sự kiện</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>Không</option>
+											<option>Có</option>
+										</select>
+									</div>
+									
+								</div>
+								<div class="row twins">
+									<div class="f-item">
+										<label>Nhận phòng từ</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>14:00</option>
+											<option>15:00</option>
+										</select>
+									</div>
+									
+									<div class="f-item">
+										<label>Trả phòng từ</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>12:00</option>
+											<option>13:00</option>
+										</select>
+									</div>
+								</div>
+
+								<h3 style="margin-top: 20px;"><span>06</span> Ảnh </h3>
+
+								<div class="row twins">
+									<div class="f-item">
+										<label>Chọn ảnh chỗ nghỉ của quý khách</label>
+										<form action="/action_page.php">
+											<input type="file" id="files" name="files" multiple><br><br>
+										</form>
+									</div>
+								</div>
+
+								<h3 style="margin-top: 20px;"><span>07</span> Chính sách hủy đặt phòng </h3>
+
+								<div class="row twins">
+									<div class="f-item">
+										<label>Chọn ảnh chỗ nghỉ của quý khách</label>
+										<select>
+											<option selected="selected">Chọn</option>
+											<option>1 ngày</option>
+											<option>5 ngày</option>
+											<option>14 ngày</option>
+											<option>30 ngày</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="row twins">
+									<div class="f-item checkbox">
+										<input type="checkbox" name="check" id="check" value="" />
+										<label>Để tránh việc Quý vị tốn thời gian xử lý các đặt phòng do nhầm lẫn, chúng tôi tự động miễn phí hủy cho các khách hủy trong vòng 24 giờ kể từ thời điểm đặt.(<b>Bật</b>/Tắt)</label> <br> <br>
+									</div>
+								</div>
+
+								
 								
 								<div class="row">
 									<div class="f-item">
