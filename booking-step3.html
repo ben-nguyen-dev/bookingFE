@@ -11,6 +11,7 @@
 	<title>Book Your Travel - Booking</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen,projection,print" />
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" />
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
@@ -36,21 +37,12 @@
 			<div class="ribbon">
 				<nav>
 					<ul class="profile-nav">
-						<li class="active"><a href="#" title="My Account">My Account</a></li>
-						<li><a href="login.html" title="Login">Login</a></li>
-						<li><a href="my_account.html" title="Settings">Settings</a></li>
-					</ul>
-					<ul class="lang-nav">
-						<li class="active"><a href="#" title="English (US)">English (US)</a></li>
-						<li><a href="#" title="English (UK)">English (UK)</a></li>
-						<li><a href="#" title="Deutsch">Deutsch</a></li>
-						<li><a href="#" title="Italiano">Italiano</a></li>
-						<li><a href="#" title="Русский">Русский</a></li>
+						<li class="active"><a href="#" title="My Account">Tài khoản</a></li>
+						<li><a href="login.html" title="Login">Đăng ký</a></li>
+						<li><a href="my_account.html" title="Settings">Cài đặt</a></li>
 					</ul>
 					<ul class="currency-nav">
-						<li class="active"><a href="#" title="$US Dollar">$US Dollar</a></li>
-						<li><a href="#" title="€ Euro">€ Euro</a></li>
-						<li><a href="#" title="£ Pound">£ Pound</a></li>
+						<li class="active"><a href="#" title="$US Dollar">Đối tác</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -76,29 +68,19 @@
 		<!--main navigation-->
 		<nav class="main-nav" role="navigation" id="nav">
 			<ul class="wrap">
-				<li><a href="hotels.html" title="Hotels">Hotels</a>
+				<li><a href="index.html" title="Home">Trang chủ</a></li>
+				<!-- <li><a href="hotels.html" title="Hotels">Hotels</a>
 					<ul>
 						<li><a href="#">Secondary navigation</a></li>
 						<li><a href="#">example links</a></li>
 						<li><a href="error.html">Error page</a></li>
 						<li><a href="loading.html">Loading page</a></li>
 					</ul>
-				</li>
-				<li><a href="flights.html" title="Flights">Flights</a></li>
-				<li><a href="flight_and_hotels.html" title="Flight + Hotel">Flight + Hotel</a></li>
-				<li><a href="self_catering.html" title="Self catering">Self catering</a></li>
-				<li><a href="cruise.html" title="Cruises">Cruises</a></li>
-				<li><a href="car_rental.html" title="Car rental">Car rental</a></li>
-				<li><a href="hot_deals.html" title="Hot deals">Hot deals</a></li>
-				<li><a href="#" title="Vacations">Vacations</a></li>
-				<li><a href="#" title="Business travel">Business travel</a></li>
-				<li><a href="#" title="Group travel">Group travel</a></li>
-				<li><a href="get_inspired.html" title="Get inspired">Get inspired</a></li>
-				<li><a href="#" title="Travel guides">Travel guides</a>
-					<ul>
-						<li><a href="location.html">Location Details</a></li>
-					</ul>
-				</li>
+				</li> -->
+				<li><a href="#" title="homstay">homestay</a></li>
+				<li><a href="#" title="homstay">Tin tức</a></li>
+				<li><a href="#" title="homstay">Liên hệ</a></li>
+				<li><a href="#" title="homstay">.....</a></li>
 			</ul>
 		</nav>
 		<!--//main navigation-->
@@ -115,33 +97,28 @@
 					<!--crumbs-->
 					<ul class="crumbs">
 						<li><a href="#" title="Home">Home</a></li>
-						<li><a href="#" title="Hotels">Hotels</a></li>
-						<li><a href="#" title="United Kingdom">United Kingdom</a></li>
-						<li><a href="#" title="London">London</a></li>  
-						<li>Best ipsum hotel</li>                                       
+						<li><a href="#" title="Check out">Check out</a></li>                                    
 					</ul>
 					<!--//crumbs-->
 					
 					<!--top right navigation-->
 					<ul class="top-right-nav">
 						<li><a href="#" title="Back to results">Back to results</a></li>
-						<li><a href="#" title="Change search">Change search</a></li>
 					</ul>
 					<!--//top right navigation-->
 				</nav>
 				<!--//breadcrumbs-->
 
 				<!--three-fourth content-->
-					<section class="three-fourth">
+					<section class="full">
 						<form id="booking" method="post" action="booking" class="booking">
 							<fieldset>
-								<h3><span>03 </span>Confirmation</h3>
+								<h3><span>02 </span>Thông tin đặt hàng</h3>
 								<div class="text-wrap">
-									<a href="#" class="gradient-button print" title="Print booking" onclick="printpage()">Print booking</a>
-									<p>Thank you. Your booking is now confirmed.</p>
+									<p>Đặt phòng thành công</p>
 								</div>
 								
-								<h3>Traveller info</h3>
+								<h3>Thông tin phòng đặt</h3>
 								<div class="text-wrap">
 									<div class="output">
 										<p>Booking number:</p>
@@ -187,48 +164,7 @@
 					</section>
 				<!--//three-fourth content-->
 			
-				<!--right sidebar-->
-				<aside class="right-sidebar">
-					<!--Booking details-->
-					<article class="booking-details clearfix">
-						<h1>Best ipsum hotel 
-							<span class="stars">
-								<img src="images/ico/star.png" alt="" />
-								<img src="images/ico/star.png" alt="" />
-								<img src="images/ico/star.png" alt="" />
-								<img src="images/ico/star.png" alt="" />
-							</span>
-						</h1>
-						<span class="address">Marylebone, London</span>
-						<span class="rating"> 8 /10</span>
-						<div class="booking-info">
-							<h6>Rooms</h6>
-							<p>Standard twin room</p>
-							<h6>Room Description</h6>
-							<p>Room only</p>
-							<h6>Check-in Date</h6>
-							<p>14-11-12</p>
-							<h6>Check-out Date</h6>
-							<p>15-11-12</p>
-							<h6>Room(s)</h6>
-							<p>1 night, 1 room, max. 2 people. </p>
-						</div>
-						<div class="price">
-							<p class="total">Total Price:  $ 55,00</p>
-							<p>VAT (20%) included</p>
-						</div>
-					</article>
-					<!--//Booking details-->
-					
-					<!--Need Help Booking?-->
-					<article class="default clearfix">
-						<h2>Need Help Booking?</h2>
-						<p>Call our customer services team on the number below to speak to one of our advisors who will help you with all of your holiday needs.</p>
-						<p class="number">1- 555 - 555 - 555</p>
-					</article>
-					<!--//Need Help Booking?-->
-				</aside>
-				<!--//right sidebar-->
+				
 			</div>
 			<!--//main content-->
 		</div>

@@ -50,6 +50,29 @@
 .room-information .price .first{
 	width: 30px;
 }
+.order table{
+	border: 1px solid #ccc;
+	width: 100%;
+	text-align: center;
+	font-size: 1.3em;
+	color: #999;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.order table td, .order table th{
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+.order a{
+	display: block;
+	margin:0 auto;
+}
+.full{
+	width: 100%;
+}
+.full .output p{
+	width: 45%;
+}
 @media screen and (max-width: 1024px){
 	.search-left .search-submit{
 		left:1%;

@@ -2647,7 +2647,7 @@ aside article h3 {
 
 /*DEFAULT SIDEBAR CONTENT BOX*/
 .default {
-    padding: 14px 7% 5px;
+    padding: 14px 7% 14px;
     width: 86%;
 }
 
