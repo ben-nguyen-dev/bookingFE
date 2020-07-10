@@ -47,20 +47,17 @@
 	height: 100px;
 	background: none;
 }
-.room-information .price .first{
-	width: 30px;
-}
 .order table{
-	border: 1px solid #ccc;
+	border: 1px solid #7d7979;
 	width: 100%;
 	text-align: center;
 	font-size: 1.3em;
-	color: #999;
+	color: #444;
 	line-height: 20px;
 	margin-bottom: 20px;
 }
 .order table td, .order table th{
-	border: 1px solid #ccc;
+	border: 1px solid #7d7979;
 	padding: 3px;
 }
 .order a{
@@ -73,18 +70,25 @@
 .full .output p{
 	width: 45%;
 }
+#number-room{
+	padding: 3% 6%;
+}
+#choice-number{
+	font-size: 1.3em;
+}
 @media screen and (max-width: 1024px){
 	.search-left .search-submit{
 		left:1%;
 	}
-	.room-information .price .first{
+/*	.room-information .price .first{
 	width: 60px;
-	}
+	}*/
 }
 @media screen and (max-width: 830px){
 	.search-left .search-submit{
 		left:35%;
 	}
+
 }
 @media screen and (max-width: 600px) {
 	.search-left .search-submit{
