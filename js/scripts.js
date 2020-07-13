@@ -2,11 +2,20 @@ $(document).ready(function () {
 	//UI FORM ELEMENTS
 	var spinner = $('.spinner input').spinner({ min: 0 });
 	
-	$('.datepicker-wrap input').datepicker({
+	$('#datepicker1').datepicker({
 		showOn: 'button',
 		buttonImage: 'images/ico/calendar.png',
 		buttonImageOnly: true,
-		dateFormat: "dd/mm/yy"
+		dateFormat: "dd/mm/yy",
+		minDate:0
+	});
+	$('#datepicker2').datepicker({
+		showOn: 'button',
+		buttonImage: 'images/ico/calendar.png',
+		buttonImageOnly: true,
+		dateFormat: "dd/mm/yy",
+		minDate:1,
+		maxDate:20
 	});
 	
 	$( '#slider' ).slider({
