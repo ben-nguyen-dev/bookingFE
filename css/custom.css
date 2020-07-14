@@ -167,9 +167,6 @@
 .three-fourth.book-room{
 	width: 100%;
 } */
-body, .main.book-room {
-    background-image: url(../images/backgrounds/wild_oliva.png);
-}
 .top-left-nav li {
 	color: white;
 }
