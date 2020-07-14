@@ -1,4 +1,9 @@
+/* home-top */
+header #wrap .ribbon nav ul.open li a {
+	text-align: center;
+}
 
+/* end-home-top */
 .search-left{
 	position: relative;
 }
@@ -182,11 +187,13 @@
 	width: 100%;
 }
 /* end-my-reviews */
+
 /* my-settings */
 .tab-setting {
 	width: 100%;
 }
 /* end-my-settings */
+
 /* my-booking */
 .tab-booking{
 	width: 100%;
