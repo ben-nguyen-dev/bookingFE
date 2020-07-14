@@ -96,3 +96,110 @@
 		left:25%;
 	}
 }
+/* ----------------------------------- */
+/* register_partner */
+.logins h1,
+.mysettings h1 {
+    margin: 0;
+}
+
+.logins h1 a {
+    text-decoration: none;
+    color: #B9ACA4;
+}
+
+.logins h1 a:hover {
+    text-decoration: underline;
+}
+
+.logins .b-info {
+    float: left;
+    width: 72%;
+}
+
+.logins .actions {
+    float: right;
+    width: 25%;
+    margin-top: 10px;
+}
+
+.logins .actions .gradient-button {
+    position: static;
+    padding: 0;
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+.tab-content .logins th,
+.tab-content .mysettings th {
+    background: none;
+    width: 25%;
+    color: #41C0B8;
+    font-family: 'RobotoBold';
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-content .logins td,
+.tab-content .mysettings td {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+/* end-register_partner */
+/* home_partner */
+.contact {
+	margin-top: 30px;
+	width: 240px;
+	height: 30px	;
+    background: url(../images/ico/person.png) 12px 0px  no-repeat;
+}
+/* end-home_partner */
+/* ---------------------------- */
+/* booking-room */
+/* .main-search{
+	margin: 0;
+}
+.column {
+	width: 45%;
+}
+.three-fourth.book-room{
+	width: 100%;
+} */
+body, .main.book-room {
+    background-image: url(../images/backgrounds/wild_oliva.png);
+}
+.top-left-nav li {
+	color: white;
+}
+.top-left-nav li a 	{
+	color: white;
+}
+.top-left-nav li a:hover{
+	color : red ;
+}
+/* end-booking-room */
+/* my-reviews */
+.tab-reviews {
+	width: 100%;
+}
+/* end-my-reviews */
+/* my-settings */
+.tab-setting {
+	width: 100%;
+}
+/* end-my-settings */
+/* my-booking */
+.tab-booking{
+	width: 100%;
+}
+/* end-my-booking */
+/* form-res */
+.form-booking {
+	width: 100%;
+}
+.twins .f-item.custom-item{
+	width: 48%;
+}
+/* end-form-res */
