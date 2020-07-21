@@ -2895,8 +2895,8 @@ footer input[type="submit"] {
     -webkit-border-radius: 0 15px 15px 0;
     position: absolute;
     top: 0;
-    right: 0;
-    height: 31px;
+    right: -5px;
+    height: 28px;
 }
 
 .bottom {
@@ -3577,8 +3577,8 @@ aside input[type="submit"] {
 .tab-content .bookings th,
 .tab-content .mysettings th {
     background: none;
-    width: 25%;
-    color: #41C0B8;
+    width: 40%;
+    color: #0800ff;
     font-family: 'RobotoBold';
     padding: 10px;
     border: none;
@@ -3612,7 +3612,7 @@ aside input[type="submit"] {
     font-size: 1em;
     margin: 10px 0 0;
     padding: 10px;
-    background: #E9E6E0;
+    background: #fff;
 }
 
 .edit_field label,

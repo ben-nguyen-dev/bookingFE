@@ -19,8 +19,20 @@
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="js/selectnav.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<script>
+		$(document).ready(function() {
+			
+			$('#star').raty({
+				score    : 3,
+				click: function(score, evt) {
+				alert('ID: ' + $(this).attr('id') + '\nscore: ' + score + '\nevent: ' + evt);
+			}
+			});
+		});
+	</script>
 </head>
 <body>
 	<!--header-->
@@ -34,21 +46,12 @@
 			<div class="ribbon">
 				<nav>
 					<ul class="profile-nav">
-						<li class="active"><a href="#" title="My Account">My Account</a></li>
-						<li><a href="login.html" title="Login">Login</a></li>
-						<li><a href="my_account.html" title="Settings">Settings</a></li>
-					</ul>
-					<ul class="lang-nav">
-						<li class="active"><a href="#" title="English (US)">English (US)</a></li>
-						<li><a href="#" title="English (UK)">English (UK)</a></li>
-						<li><a href="#" title="Deutsch">Deutsch</a></li>
-						<li><a href="#" title="Italiano">Italiano</a></li>
-						<li><a href="#" title="Русский">Русский</a></li>
+						<li class="active"><a href="#" title="My Account">Tài khoản</a></li>
+						<li><a href="login.html" title="Register">Đăng ký</a></li>
+						<li><a href="register.html" title="Login">Đăng nhập</a></li>
 					</ul>
 					<ul class="currency-nav">
-						<li class="active"><a href="#" title="$US Dollar">$US Dollar</a></li>
-						<li><a href="#" title="€ Euro">€ Euro</a></li>
-						<li><a href="#" title="£ Pound">£ Pound</a></li>
+						<li class="active"><a href="#" title="Partners">Đối tác</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -74,29 +77,18 @@
 		<!--main navigation-->
 		<nav class="main-nav" role="navigation" id="nav">
 			<ul class="wrap">
-				<li><a href="hotels.html" title="Hotels">Hotels</a>
-					<ul>
+				<li><a href="index.html" title="Home">Trang chủ</a></li>
+					<!-- <ul>
 						<li><a href="#">Secondary navigation</a></li>
 						<li><a href="#">example links</a></li>
 						<li><a href="error.html">Error page</a></li>
 						<li><a href="loading.html">Loading page</a></li>
-					</ul>
+					</ul> -->
 				</li>
-				<li><a href="flights.html" title="Flights">Flights</a></li>
-				<li><a href="flight_and_hotels.html" title="Flight + Hotel">Flight + Hotel</a></li>
-				<li><a href="self_catering.html" title="Self catering">Self catering</a></li>
-				<li><a href="cruise.html" title="Cruises">Cruises</a></li>
-				<li><a href="car_rental.html" title="Car rental">Car rental</a></li>
-				<li><a href="hot_deals.html" title="Hot deals">Hot deals</a></li>
-				<li><a href="#" title="Vacations">Vacations</a></li>
-				<li><a href="#" title="Business travel">Business travel</a></li>
-				<li><a href="#" title="Group travel">Group travel</a></li>
-				<li><a href="get_inspired.html" title="Get inspired">Get inspired</a></li>
-				<li><a href="#" title="Travel guides">Travel guides</a>
-					<ul>
-						<li><a href="location.html">Location Details</a></li>
-					</ul>
-				</li>
+				<li><a href="user_blog.html"  title="blog">blog</a></li>
+				<li><a href="#" title="hot deals">hot deals</a></li>
+				<li><a href="#" title="contact">Liên hệ</a></li>
+				<!-- <li><a href="#" title="homstay">.....</a></li> -->
 			</ul>
 		</nav>
 		<!--//main navigation-->
@@ -128,39 +120,39 @@
 					<!--inner navigation-->
 					<nav class="inner-nav">
 						<ul>
-							<li><a href="#MyBookings" title="My Bookings">My Bookings</a></li>
-							<li><a href="#MyReviews" title="My Reviews">My Reviews</a></li>
-							<li><a href="#MySettings" title="Settings">Settings</a></li>
+							<li><a href="#MyHistorys" title="Bookings History">Lịch sử đặt phòng</a></li>
+							<li><a href="#MyReviews" title="My Booking">Phòng đang đặt</a></li>
+							<li><a href="#MySettings" title="Settings">Cài đặt tài khoản</a></li>
 						</ul>
 					</nav>
 					<!--//inner navigation-->
 					
 					<!--My Bookings-->
-					<section id="MyBookings" class="tab-content">
+					<section id="MyHistorys" class="tab-content">
 						<!--booking-->
 						<article class="bookings">
-							<h1><a href="#">Best ipsum hotel</a></h1>
+							<h1><a href="#">Tên Homestay</a></h1>
 							<div class="b-info">
 								<table>
 									<tr>
-										<th>Booking number</th>
-										<td>123378673755</td>
+										<th>Loại phòng</th>
+										<td>1 giường đơn</td>
 									</tr>
 									<tr>
-										<th>Room</th>
-										<td>Twin room with balcony</td>
+										<th>Ngày nhận phòng</th>
+										<td>23-05-20</td>
 									</tr>
 									<tr>
-										<th>Check-in Date</th>
-										<td>23-05-14</td>
+										<th>Ngày trả phòng</th>
+										<td>30-05-20</td>
 									</tr>
 									<tr>
-										<th>Check-out Date</th>
-										<td>30-05-14</td>
+										<th>Tổng tiền thanh toán</th>
+										<td><strong>200.000đ</strong></td>
 									</tr>
 									<tr>
-										<th>Total Price:</th>
-										<td><strong>$ 55,00</strong></td>
+										<th>Trạng thái đặt phòng</th>
+										<td><strong>Đã thanh toán</strong></td>
 									</tr>
 								</table>
 							</div>
@@ -176,28 +168,28 @@
 						
 						<!--booking-->
 						<article class="bookings">
-							<h1><a href="#">Lorem ipsum hotel and spa</a></h1>
+							<h1><a href="#">Tên Homestay</a></h1>
 							<div class="b-info">
 								<table>
 									<tr>
-										<th>Booking number</th>
-										<td>3378673755</td>
+										<th>Loại phòng</th>
+										<td>1 giường đơn</td>
 									</tr>
 									<tr>
-										<th>Room</th>
-										<td>Twin room with balcony</td>
+										<th>Ngày nhận phòng</th>
+										<td>23-05-20</td>
 									</tr>
 									<tr>
-										<th>Check-in Date</th>
-										<td>23-01-12</td>
+										<th>Ngày trả phòng</th>
+										<td>30-05-20</td>
 									</tr>
 									<tr>
-										<th>Check-out Date</th>
-										<td>25-01-12</td>
+										<th>Tổng tiền thanh toán</th>
+										<td><strong>200.000đ</strong></td>
 									</tr>
 									<tr>
-										<th>Total Price:</th>
-										<td><strong>$ 35,00</strong></td>
+										<th>Trạng thái đặt phòng</th>
+										<td><strong>Đã Hủy</strong></td>
 									</tr>
 								</table>
 							</div>
@@ -211,28 +203,46 @@
 						
 						<!--booking-->
 						<article class="bookings">
-							<h1><a href="#">Lorem ipsum hotel and spa</a></h1>
+							<h1><a href="#">Tên Homestay</a></h1>
 							<div class="b-info">
 								<table>
 									<tr>
-										<th>Booking number</th>
-										<td>3378673755</td>
+										<th>Loại phòng</th>
+										<td>1 giường đơn</td>
 									</tr>
 									<tr>
-										<th>Room</th>
-										<td>Twin room with balcony</td>
+										<th>Ngày nhận phòng</th>
+										<td>23-05-20</td>
 									</tr>
 									<tr>
-										<th>Check-in Date</th>
-										<td>23-01-12</td>
+										<th>Ngày trả phòng</th>
+										<td>30-05-20</td>
 									</tr>
 									<tr>
-										<th>Check-out Date</th>
-										<td>25-01-12</td>
+										<th>Tổng tiền thanh toán</th>
+										<td><strong>200.000đ</strong></td>
 									</tr>
-									<tr>
-										<th>Total Price:</th>
-										<td><strong>$ 35,00</strong></td>
+									<tr id="rating" class="edit_field">
+										<th>Đánh giá</th>
+										<td>
+											<form action="">
+												<!--Star rating-->
+												<dt>Star rating</dt>
+												<dd style="display: block; height: auto;">
+													<div id="star" data-rating="3" style="cursor: pointer; width: 110px;">
+														<img src="images/ico/star-rating-on.png" alt="1" title="bad">&nbsp;
+														<img src="images/ico/star-rating-on.png" alt="2" title="poor">&nbsp;
+														<img src="images/ico/star-rating-on.png" alt="3" title="regular">&nbsp;
+														<img src="images/ico/star-rating-off.png" alt="4" title="good">&nbsp;
+														<img src="images/ico/star-rating-off.png" alt="5" title="gorgeous">
+														<input type="hidden" name="score" value="3">
+													</div>
+												</dd>
+												<!--//Star rating-->
+												<textarea name="comment" id="comment" cols="10" rows="3"></textarea>
+												<input type="submit" class="gradient-button" id="addRating" name="addRating" value="Gửi">
+											</form>
+										</td>
 									</tr>
 								</table>
 							</div>
@@ -240,34 +250,43 @@
 							<div class="actions">
 								<a href="#" class="gradient-button">Book again</a>
 								<a href="#" class="gradient-button">Remove from list</a>
+								<a href="#rating" class="gradient-button edit">Rating</a>
 							</div>
 						</article>
 						<!--//booking-->
 						
 						<!--booking-->
 						<article class="bookings">
-							<h1><a href="#">Lorem ipsum hotel and spa</a></h1>
+							<h1><a href="#">Tên Homestay</a></h1>
 							<div class="b-info">
 								<table>
 									<tr>
-										<th>Booking number</th>
-										<td>3378673755</td>
+										<th>Loại phòng</th>
+										<td>2 giường đơn</td>
 									</tr>
 									<tr>
-										<th>Room</th>
-										<td>Twin room with balcony</td>
+										<th>Ngày nhận phòng</th>
+										<td>23-05-20</td>
 									</tr>
 									<tr>
-										<th>Check-in Date</th>
-										<td>23-01-12</td>
+										<th>Ngày trả phòng</th>
+										<td>30-05-20</td>
 									</tr>
 									<tr>
-										<th>Check-out Date</th>
-										<td>25-01-12</td>
+										<th>Tổng tiền thanh toán</th>
+										<td><strong>200.000đ</strong></td>
 									</tr>
 									<tr>
-										<th>Total Price:</th>
-										<td><strong>$ 35,00</strong></td>
+										<th>Trạng thái đặt phòng</th>
+										<td><strong>Đã thanh toán</strong></td>
+									</tr>
+									<tr>
+										<th>Trạng thái đặt phòng</th>
+										<td><strong>Đã thanh toán</strong></td>
+									</tr>
+									<tr>
+										<th>Trạng thái đặt phòng</th>
+										<td><strong>Đã thanh toán</strong></td>
 									</tr>
 								</table>
 							</div>
