@@ -1,0 +1,259 @@
+/* home-top */
+header #wrap .ribbon nav ul.open li a {
+	text-align: center;
+}
+
+/* end-home-top */
+.search-left{
+	position: relative;
+}
+.search-left .f-item{
+	padding:0 0 10px;
+	float: none;
+}
+.search-left .ui-datepicker-trigger{
+	top: 25px;
+}
+.search-left .ui-icon-triangle-1-s{
+	top: 35px;
+}
+.search-left .ui-icon-triangle-1-n{
+	top: 25px;
+}
+.search-left .search-submit {
+	position: absolute;
+    left: 35px;
+    width: 204px;
+    height: 34px;
+    border: none;
+    font: normal 1.2em/34px 'RobotoBold';
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    -moz-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+.image-item{
+	position: relative;
+	border-top:1px solid #DFDCD1;
+	padding:18px 0 0;
+	margin:0 0 -5px;
+}
+.image-item img{
+	display: inline-block;
+}
+.image-item ul li{
+	position: relative;
+	display: block;
+	float: left;
+	margin: 2px;
+}
+.image-item .image-overlay{
+	width: 100%;
+	height: 100px;
+	background: none;
+}
+.order table{
+	border: 1px solid #7d7979;
+	width: 100%;
+	text-align: center;
+	font-size: 1.3em;
+	color: #444;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.order table td, .order table th{
+	border: 1px solid #7d7979;
+	padding: 3px;
+}
+.order a{
+	display: block;
+	margin:0 auto;
+}
+.full{
+	width: 100%;
+}
+.full .output p{
+	width: 45%;
+}
+#number-room{
+	padding: 3% 6%;
+}
+#choice-number{
+	font-size: 1.3em;
+}
+@media screen and (max-width: 1024px){
+	.search-left .search-submit{
+		left:1%;
+	}
+/*	.room-information .price .first{
+	width: 60px;
+	}*/
+}
+@media screen and (max-width: 830px){
+	.search-left .search-submit{
+		left:35%;
+	}
+
+}
+@media screen and (max-width: 600px) {
+	.search-left .search-submit{
+		left:25%;
+	}
+}
+/* ----------------------------------- */
+/* register_partner */
+.logins h1,
+.mysettings h1 {
+    margin: 0;
+}
+
+.logins h1 a {
+    text-decoration: none;
+    color: #B9ACA4;
+}
+
+.logins h1 a:hover {
+    text-decoration: underline;
+}
+
+.logins .b-info {
+    float: left;
+    width: 72%;
+}
+
+.logins .actions {
+    float: right;
+    width: 25%;
+    margin-top: 10px;
+}
+
+.logins .actions .gradient-button {
+    position: static;
+    padding: 0;
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+.tab-content .logins th,
+.tab-content .mysettings th {
+    background: none;
+    width: 25%;
+    color: #41C0B8;
+    font-family: 'RobotoBold';
+    padding: 10px;
+    border: none;
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.tab-content .logins td,
+.tab-content .mysettings td {
+    padding: 10px;
+    border: none;
+    /* border-bottom: 1px solid #ccc; */
+}
+/* end-register_partner */
+/* home_partner */
+.contact {
+	margin-top: 30px;
+	width: 240px;
+	height: 30px	;
+    background: url(../images/ico/person.png) 12px 0px  no-repeat;
+}
+/* end-home_partner */
+/* ---------------------------- */
+/* booking-room */
+/* .main-search{
+	margin: 0;
+}
+.column {
+	width: 45%;
+}
+.three-fourth.book-room{
+	width: 100%;
+} */
+.top-left-nav li {
+	color: white;
+}
+.top-left-nav li a 	{
+	color: white;
+}
+.top-left-nav li a:hover{
+	color : red ;
+}
+/* end-booking-room */
+/* my-reviews */
+.tab-reviews {
+	width: 100%;
+}
+/* end-my-reviews */
+
+/* my-settings */
+.tab-setting {
+	width: 100%;
+}
+/* end-my-settings */
+
+/* my-booking */
+.tab-booking{
+	width: 100%;
+}
+/* end-my-booking */
+/* form-res */
+.form-booking {
+	width: 100%;
+}
+.twins .f-item.custom-item{
+	width: 48%;
+}
+/* end-form-res */
+/* index partner */
+.gradient-button.delete {
+    background: #ff6666;
+}
+.gradient-button.add {
+    background: #5cb85c	;
+}
+.gradient-button.edit1 {
+    background: #d58512	;
+}
+.gradient-button.see {
+    background: #a6a6a6	;
+}
+/* end-index-partner */
+/* list-homestay-room */
+table.list-homestay {
+	border-collapse: collapse;
+	width: 100%;
+}
+  
+  .list-homestay tr,th, td {
+	padding: 8px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	font-size: 20px;
+}
+  table.list-homestay tr:hover {
+	  background-color: #f5f5f5;
+}
+table.list-homestay tr td a{
+	text-decoration: none;
+}
+table.list-homestay tr th {
+  background-color: #4CAF50;
+  color: white;
+}
+/* end-list */
+/* detail-booking */
+.tab-content{
+	width: 100%;
+}
+/* end-detail booking  */
+/* register_partner */
+.tab-content.login-tab{
+	width: 75%;
+}
+.tab-content.register-tab{
+	width: 75%;
+}
+/* end-register_partner */
