@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7 ]>    <html class="ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 	 ]>    <html class="ie" lang="en"> <![endif]-->
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="HandheldFriendly" content="True">
+	<title>Book Your Travel - Self catering</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen,projection,print" />
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="css/custom.css">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="js/sequence.jquery-min.js"></script>
+	<script type="text/javascript" src="js/sequence.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/selectnav.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function(){
+			$(".form").hide();
+			$("#form2").show();
+			$(".f-item:nth-child(3)").addClass("active");
+			$(".f-item:nth-child(3) span").addClass("checked");			
+		});
+	</script>
+</head>
+<body>
+	<!--header-->
+	<header>
+		<div class="wrap clearfix">
+			<!--logo-->
+			<h1 class="logo"><a href="index.html" title="Book Your Travel - home"><img src="images/txt/logo.png" alt="Book Your Travel" /></a></h1>
+			<!--//logo-->
+			
+			<!--ribbon-->
+			<div class="ribbon">
+				<nav>
+					<ul class="profile-nav">
+						<li class="active"><a href="#" title="My Account">Tài khoản</a></li>
+						<li><a href="login.html" title="Register">Đăng ký</a></li>
+						<li><a href="register.html" title="Login">Đăng nhập</a></li>
+					</ul>
+					<ul class="currency-nav">
+						<li class="active"><a href="#" title="Partners">Đối tác</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!--//ribbon-->
+			
+			<!--search-->
+			<div class="search">
+				<form id="search-form" method="get" action="search-form">
+					<input type="search" placeholder="Search entire site here" name="site_search" id="site_search" /> 
+					<input type="submit" id="submit-site-search" value="submit-site-search" name="submit-site-search"/>
+				</form>
+			</div>
+			<!--//search-->
+			
+			<!--contact-->
+			<div class="contact">
+				<span>24/7 Support number</span>
+				<span class="number">1- 555 - 555 - 555</span>
+			</div>
+			<!--//contact-->
+		</div>
+		
+		<!--main navigation-->
+		<nav class="main-nav" role="navigation" id="nav">
+			<ul class="wrap">
+				<li  ><a href="index.html" title="Home">Trang chủ</a></li>
+					<!-- <ul>
+						<li><a href="#">Secondary navigation</a></li>
+						<li><a href="#">example links</a></li>
+						<li><a href="error.html">Error page</a></li>
+						<li><a href="loading.html">Loading page</a></li>
+					</ul> -->
+				</li>
+				<li class="active" ><a href="#"  title="blog">blog</a></li>
+				<li><a href="#" title="hot deals">hot deals</a></li>
+				<li><a href="#" title="contact">Liên hệ</a></li>
+				<!-- <li><a href="#" title="homstay">.....</a></li> -->
+			</ul>
+		</nav>
+		<!--//main navigation-->
+	</header>
+	<!--//header-->
+
+	<!--main-->
+	<div class="main" role="main">		
+		<div class="wrap clearfix">
+			<!-- main content -->
+			<div class="content clearfix">
+				<!--breadcrumbs-->
+				<nav role="navigation" class="breadcrumbs clearfix">
+					<!--crumbs-->
+					<ul class="crumbs">
+						<li><a href="#" title="Home">Home</a></li> 
+						<li>Blog</li>                                       
+					</ul>
+					<!--//crumbs-->
+				</nav>
+				<!--//breadcrumbs-->
+
+				<!--deals-->
+				<section class="full">
+					<h1>Địa điểm du lịch</h1>
+					<div class="deals clearfix">
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="user_blog_detail.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="user_blog_detail.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						<!--deal-->
+						<article class="one-fourth">
+							<figure><a href="hotel.html" title=""><img src="images/uploads/img.jpg" alt="" width="270" height="172" /></a></figure>
+							<div class="details">
+								<a href="#" class="title">Du lịch Phú Quốc : Khinh nghiệm du lịch phú quốc tự túc</a>
+								<div class="description blog">
+									<p>Phú Quốc địa danh được rất nhiều người quan tâm mà mong muốn một lần được ghé qua. Vậy thì còn chần chừ gì nữa, hôm nay Blog Trần Phú sẽ cùng bạn tìm hiểu Du lịch phú quốc có gì hấp dẫn và những kinh nghiệm đến phú quốc bạn cần có. <a href="hotel.html">More info</a></p>
+									<p class="time_created">15 tháng 5, 2020</p>
+								</div>
+							</div>
+						</article>
+						<!--//deal-->
+						
+						<!--bottom navigation-->
+						<div class="bottom-nav">
+							<!--back up button-->
+							<a href="#" class="scroll-to-top" title="Back up">Back up</a> 
+							<!--//back up button-->
+							
+							<!--pager-->
+							<div class="pager">
+								<span><a href="#">Trang đầu</a></span>
+								<span><a href="#">&lt;</a></span>
+								<span class="current">1</span>
+								<span><a href="#">2</a></span>
+								<span><a href="#">3</a></span>
+								<span><a href="#">4</a></span>
+								<span><a href="#">5</a></span>
+								<span><a href="#">6</a></span>
+								<span><a href="#">7</a></span>
+								<span><a href="#">8</a></span>
+								<span><a href="#">&gt;</a></span>
+								<span><a href="#">Trang cuối</a></span>
+							</div>
+							<!--//pager-->
+						</div>
+						<!--//bottom navigation-->
+					</div>
+				</section>	
+				<!--//deals-->
+			</div>
+			<!-- //main content -->
+		</div>
+	</div>
+	<!--//main-->
+	
+	<!--footer-->
+	<footer>
+		<div class="wrap clearfix">
+			<!--column-->
+			<article class="one-fourth">
+				<h3>Book Your Travel</h3>
+				<p>1400 Pennsylvania Ave. Washington, DC</p>
+				<p><em>P:</em> 24/7 customer support: 1-555-555-5555</p>
+				<p><em>E:</em> <a href="#" title="booking@mail.com">booking@mail.com</a></p>
+			</article>
+			<!--//column-->
+			
+			<!--column-->
+			<article class="one-fourth">
+				<h3>Customer support</h3>
+				<ul>
+					<li><a href="#" title="Faq">Faq</a></li>
+					<li><a href="#" title="How do I make a reservation?">How do I make a reservation?</a></li>
+					<li><a href="#" title="Payment options">Payment options</a></li>
+					<li><a href="#" title="Booking tips">Booking tips</a></li>
+				</ul>
+			</article>
+			<!--//column-->
+			
+			<!--column-->
+			<article class="one-fourth">
+				<h3>Follow us</h3>
+				<ul class="social">
+					<li class="facebook"><a href="#" title="facebook">facebook</a></li>
+					<li class="youtube"><a href="#" title="youtube">youtube</a></li>
+					<li class="rss"><a href="#" title="rss">rss</a></li>
+					<li class="linkedin"><a href="#" title="linkedin">linkedin</a></li>
+					<li class="googleplus"><a href="#" title="googleplus">googleplus</a></li>
+					<li class="twitter"><a href="#" title="twitter">twitter</a></li>
+					<li class="vimeo"><a href="#" title="vimeo">vimeo</a></li>
+					<li class="pinterest"><a href="#" title="pinterest">pinterest</a></li>
+				</ul>
+			</article>
+			<!--//column-->
+			
+			<!--column-->
+			<article class="one-fourth last">
+				<h3>Don’t miss our exclusive offers</h3>
+				<form id="newsletter" action="newsletter.php" method="post">
+					<fieldset>
+						<input type="email" id="newsletter_signup" name="newsletter_signup" placeholder="Enter your email here" />
+						<input type="submit" id="newsletter_submit" name="newsletter_submit" value="Signup" class="gradient-button" />
+					</fieldset>
+				</form>
+			</article>
+			<!--//column-->
+			
+			<section class="bottom">
+				<p class="copy">Copyright 2012 Book your travel ltd. All rights reserved</p>
+				<nav>
+					<ul>
+						<li><a href="#" title="About us">About us</a></li>
+						<li><a href="contact.html" title="Contact">Contact</a></li>
+						<li><a href="#" title="Partners">Partners</a></li>
+						<li><a href="#" title="Customer service">Customer service</a></li>
+						<li><a href="#" title="FAQ">FAQ</a></li>
+						<li><a href="#" title="Careers">Careers</a></li>
+						<li><a href="#" title="Terms & Conditions">Terms &amp; Conditions</a></li>
+						<li><a href="#" title="Privacy statement">Privacy statement</a></li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+	</footer>
+	<!--//footer-->
+	
+	<script>
+		// Initiate selectnav function
+		selectnav();
+	</script>
+</body>
+</html>

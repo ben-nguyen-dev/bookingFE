@@ -1,4 +1,10 @@
-
+h1{
+	color: #2b2b2b;
+}
+.address-suggest h4{
+	border-bottom: none;
+	border-top: 1px solid #ccc;
+}
 .search-left{
 	position: relative;
 }
@@ -76,6 +82,45 @@
 }
 #choice-number{
 	font-size: 1.3em;
+}
+.deals .title {
+	text-decoration: none;
+	text-align: left;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.5em;
+    padding: 10px 0;
+    margin: 10px 0;
+    line-height: 19px;
+    color: #0007d6;
+}
+.deals .blog{
+	border-bottom: none;
+}
+.deals .time_created{
+	font-size: 1em;
+	text-align: right;
+	color: #969696;
+	font-style: italic;
+}
+.post-title h1{
+	padding: 24px 0 12px;
+	color: #000;
+	font-size: 2.7em;
+}
+.post-infor p{
+	text-align: left;
+	font-style: italic;
+}
+.post-content h3{
+	color: #000;
+}
+.post-content p{
+	color: #2b2b2b;
+}
+#address{
+	font-size: 1.2em;
 }
 @media screen and (max-width: 1024px){
 	.search-left .search-submit{
