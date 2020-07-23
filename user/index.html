@@ -42,8 +42,8 @@
 				<nav>
 					<ul class="profile-nav">
 						<li class="active"><a href="#" title="My Account">Tài khoản</a></li>
-						<li><a href="login.html" title="Register">Đăng ký</a></li>
-						<li><a href="register.html" title="Login">Đăng nhập</a></li>
+						<li><a href="#" class="register" title="Register">Đăng ký</a></li>
+						<li><a href="#" class="login" title="Login">Đăng nhập</a></li>
 					</ul>
 					<ul class="currency-nav">
 						<li class="active"><a href="#" title="Partners">Đối tác</a></li>
@@ -64,7 +64,7 @@
 			<!--contact-->
 			<div class="contact">
 				<span>24/7 Support number</span>
-				<span class="number">1- 555 - 555 - 555</span>
+				<span class="number">1800 1989</span>
 			</div>
 			<!--//contact-->
 		</div>
@@ -73,20 +73,78 @@
 		<nav class="main-nav" role="navigation" id="nav">
 			<ul class="wrap">
 				<li class="active" ><a href="index.html" title="Home">Trang chủ</a></li>
-					<!-- <ul>
-						<li><a href="#">Secondary navigation</a></li>
-						<li><a href="#">example links</a></li>
-						<li><a href="error.html">Error page</a></li>
-						<li><a href="loading.html">Loading page</a></li>
-					</ul> -->
-				</li>
-				<li ><a href="user_blog.html"  title="blog">blog</a></li>
-				<li><a href="#" title="hot deals">hot deals</a></li>
-				<li><a href="#" title="contact">Liên hệ</a></li>
-				<!-- <li><a href="#" title="homstay">.....</a></li> -->
+				<li ><a href="user_blog.html"  title="blog">Blog</a></li>
+				<li><a href="user_hot_deals.html" title="hot deals">Khuyến mại</a></li>
 			</ul>
 		</nav>
 		<!--//main navigation-->
+
+		<!-- Popup -->
+		<div class="popup">
+			<!-- Login -->
+			<div class="lightbox" id="login" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng nhập</h1>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="remember_me" name="checkbox" />
+								<label for="remember_me">Duy trì đăng nhập</label>
+							</div>
+							<p><a href="user_reset_password_step_1.html" title="Forgot password?">Quên mật khẩu?</a>
+								<br />
+								<span style="color: rgba(56, 209, 255, 0.86);" >Nếu bạn chưa có tài khoản?</span>
+								<a href="#" class="register" title="Sign up">Đăng ký</a></p>
+							<input type="submit" id="login" name="login" value="Đăng nhập" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- Register -->
+			<div class="lightbox" id="register" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng ký</h1>
+							<div class="f-item">
+								<label for="f_name">Họ và Tên</label>
+								<input type="text" id="f_name" name="f_name" />
+							</div>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item">
+								<label for="confirm_password">Nhập lại mật khẩu</label>
+								<input type="password" id="confirm_password" name="confirm_password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="newsletter" name="newsletter" />
+								<label for="newsletter">Thông báo cho tôi những ưu đãi độc quyền</label>
+							</div>
+							<p style="color: rgba(56, 209, 255, 0.86);">Hãy nhấn <span style="color: aliceblue;">"Đăng ký"</span> nếu bạn đã đọc và đông ý với <a href="user_terms_of_service.html">Điều khoản dịch vụ</a> và <a href="user_terms_of_service.html">Chính sách bảo mật</a> của chúng tôi. </p>
+							<input type="submit" id="register" name="register" value="Đăng ký" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Popup -->
 	</header>
 	<!--//header-->
 	
@@ -118,31 +176,6 @@
 						<p>Thủ tục đăng ký nhanh gọn</p>
 					</div>
 					<img class="main-image animate-in" src="images/slider/img4.jpg" alt="" />
-				</li><li>
-					<div class="info animate-in">
-						<h2>Giá cả hợp lý</h2><br />
-						<p>Thủ tục đăng ký nhanh gọn</p>
-					</div>
-					<img class="main-image animate-in" src="images/slider/img5.jpg" alt="" />
-				</li><li>
-					<div class="info animate-in">
-						<h2>Giá cả hợp lý</h2><br />
-						<p>Thủ tục đăng ký nhanh gọn</p>
-					</div>
-					<img class="main-image animate-in" src="images/slider/img6.jpg" alt="" />
-				</li><li>
-					<div class="info animate-in">
-						<h2>Giá cả hợp lý</h2><br />
-						<p>Thủ tục đăng ký nhanh gọn</p>
-					</div>
-					<img class="main-image animate-in" src="images/slider/img7.jpg" alt="" />
-				</li><li>
-					<div class="info animate-in">
-						<h2>Giá cả hợp lý</h2><br />
-						<p>Thủ tục đăng ký nhanh gọn</p>
-					</div>
-					<img class="main-image animate-in" src="images/slider/img8.jpg" alt="" />
-				</li>
 			</ul>
 		</div>
 	</section>
@@ -150,7 +183,7 @@
 	
 	<!--search-->
 	<div class="main-search">
-		<form id="main-search" method="post" action="search_results.html">
+		<form id="main-search" method="post" action="user_search_results.html">
 			<div class="forms">
 				<!--form hotel-->
 				<div class="form" id="form1">
@@ -211,20 +244,20 @@
 				<h1>Top Homestay được yêu thích </h1>
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -234,20 +267,20 @@
 				<!--//column-->
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -257,20 +290,20 @@
 				<!--//column-->
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -280,20 +313,20 @@
 				<!--//column-->
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -305,20 +338,20 @@
 				
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -329,20 +362,20 @@
 				<!--column-->
 				<article class="one-fourth promo">
 					<div class="ribbon-small">- 20%</div>
-					<figure><a href="hot_deals.html" title=""><img src="images/uploads/img3.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_hot_deals.html" title=""><img src="images/uploads/img3.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="hot_deals.html" title="View all" class="gradient-button">View all</a>
+						<a href="user_hot_deals.html" title="View all" class="gradient-button">View all</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -353,20 +386,20 @@
 				
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -377,20 +410,20 @@
 				
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -406,20 +439,20 @@
 				<h1>Sạch sẽ thoải mái, phù hợp cho lưu trú dài ngày</h1>
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -429,20 +462,20 @@
 				<!--//column-->
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -452,20 +485,20 @@
 				<!--//column-->
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -475,20 +508,20 @@
 				<!--//column-->
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -500,20 +533,20 @@
 				
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -531,13 +564,13 @@
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -548,20 +581,20 @@
 				
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -572,20 +605,20 @@
 				
 				<!--column-->
 				<article class="one-fourth">
-					<figure><a href="location.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
+					<figure><a href="user_room_detail.html" title=""><img src="images/uploads/img2.jpg" alt="" width="270" height="152" /></a></figure>
 					<div class="details">
-						<a href="location.html" title="View all" class="gradient-button">More info</a>
+						<a href="user_room_detail.html" title="View all" class="gradient-button">More info</a>
 						<h5>LuxStay</h5>
 						<span class="count">4.5 <img src="images/ico/star.png" alt=""></span>
 						<div class="ribbon">
 							<div class="half hotel">
-								<a href="hotels.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="small">Giá từ</span>
 									<span class="price">200.000đ</span>
 								</a>
 							</div>
 							<div class="half flight">
-								<a href="flights.html" title="View all">
+								<a href="user_room_detail.html" title="View all">
 									<span class="location">Hà Nội</span>
 								</a>
 							</div>
@@ -665,8 +698,8 @@
 			<!--column-->
 			<article class="one-fourth">
 				<h3>Book Your Travel</h3>
-				<p>1400 Pennsylvania Ave. Washington, DC</p>
-				<p><em>P:</em> 24/7 customer support: 1-555-555-5555</p>
+				<p>238 Hoàng Quốc Việt, Bắc Từ Liêm, Hà Nội</p>
+				<p><em>P:</em> 24/7 customer support: 1800 1989</p>
 				<p><em>E:</em> <a href="#" title="booking@mail.com">booking@mail.com</a></p>
 			</article>
 			<!--//column-->
@@ -677,7 +710,7 @@
 				<ul>
 					<li><a href="#" title="Faq">Faq</a></li>
 					<li><a href="#" title="How do I make a reservation?">How do I make a reservation?</a></li>
-					<li><a href="#" title="Payment options">Payment options</a></li>
+				<li><a href="#" title="Payment options">Payment options</a></li>
 					<li><a href="#" title="Booking tips">Booking tips</a></li>
 				</ul>
 			</article>
@@ -689,12 +722,12 @@
 				<ul class="social">
 					<li class="facebook"><a href="#" title="facebook">facebook</a></li>
 					<li class="youtube"><a href="#" title="youtube">youtube</a></li>
-					<!-- <li class="rss"><a href="#" title="rss">rss</a></li> -->
+					<li class="rss"><a href="#" title="rss">rss</a></li>
 					<!-- <li class="linkedin"><a href="#" title="linkedin">linkedin</a></li> -->
-					<!-- <li class="googleplus"><a href="#" title="googleplus">googleplus</a></li> -->
+					<li class="googleplus"><a href="#" title="googleplus">googleplus</a></li>
 					<li class="twitter"><a href="#" title="twitter">twitter</a></li>
 					<!-- <li class="vimeo"><a href="#" title="vimeo">vimeo</a></li> -->
-					<!-- <li class="pinterest"><a href="#" title="pinterest">pinterest</a></li> -->
+					<li class="pinterest"><a href="#" title="pinterest">pinterest</a></li>
 				</ul>
 			</article>
 			<!--//column-->

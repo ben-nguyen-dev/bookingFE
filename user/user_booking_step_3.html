@@ -19,6 +19,10 @@
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
 	<script type="text/javascript" src="js/selectnav.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript">
+		function printpage()
+			{window.print()}
+	</script>
 </head>
 <body>
 	<!--header-->
@@ -33,11 +37,11 @@
 				<nav>
 					<ul class="profile-nav">
 						<li class="active"><a href="#" title="My Account">Tài khoản</a></li>
-						<li><a href="login.html" title="Login">Đăng ký</a></li>
-						<li><a href="my_account.html" title="Settings">Cài đặt</a></li>
+						<li><a href="#" class="register" title="Register">Đăng ký</a></li>
+						<li><a href="#" class="login" title="Login">Đăng nhập</a></li>
 					</ul>
 					<ul class="currency-nav">
-						<li class="active"><a href="#" title="$US Dollar">Đối tác</a></li>
+						<li class="active"><a href="#" title="Partners">Đối tác</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -55,7 +59,7 @@
 			<!--contact-->
 			<div class="contact">
 				<span>24/7 Support number</span>
-				<span class="number">1- 555 - 555 - 555</span>
+				<span class="number">1800 1989</span>
 			</div>
 			<!--//contact-->
 		</div>
@@ -63,22 +67,79 @@
 		<!--main navigation-->
 		<nav class="main-nav" role="navigation" id="nav">
 			<ul class="wrap">
-				<li><a href="index.html" title="Home">Trang chủ</a></li>
-				<!-- <li><a href="hotels.html" title="Hotels">Hotels</a>
-					<ul>
-						<li><a href="#">Secondary navigation</a></li>
-						<li><a href="#">example links</a></li>
-						<li><a href="error.html">Error page</a></li>
-						<li><a href="loading.html">Loading page</a></li>
-					</ul>
-				</li> -->
-				<li><a href="#" title="homstay">homestay</a></li>
-				<li><a href="#" title="homstay">Tin tức</a></li>
-				<li><a href="#" title="homstay">Liên hệ</a></li>
-				<li><a href="#" title="homstay">.....</a></li>
+				<li class="active" ><a href="index.html" title="Home">Trang chủ</a></li>
+				<li ><a href="user_blog.html"  title="blog">Blog</a></li>
+				<li><a href="user_hot_deals.html" title="hot deals">Khuyến mại</a></li>
 			</ul>
 		</nav>
 		<!--//main navigation-->
+
+		<!-- Popup -->
+		<div class="popup">
+			<!-- Login -->
+			<div class="lightbox" id="login" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng nhập</h1>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="remember_me" name="checkbox" />
+								<label for="remember_me">Duy trì đăng nhập</label>
+							</div>
+							<p><a href="user_reset_password_step_1.html" title="Forgot password?">Quên mật khẩu?</a>
+								<br />
+								<span style="color: rgba(56, 209, 255, 0.86);" >Nếu bạn chưa có tài khoản?</span>
+								<a href="#" class="register" title="Sign up">Đăng ký</a></p>
+							<input type="submit" id="login" name="login" value="Đăng nhập" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- Register -->
+			<div class="lightbox" id="register" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng ký</h1>
+							<div class="f-item">
+								<label for="f_name">Họ và Tên</label>
+								<input type="text" id="f_name" name="f_name" />
+							</div>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item">
+								<label for="confirm_password">Nhập lại mật khẩu</label>
+								<input type="password" id="confirm_password" name="confirm_password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="newsletter" name="newsletter" />
+								<label for="newsletter">Thông báo cho tôi những ưu đãi độc quyền</label>
+							</div>
+							<p style="color: rgba(56, 209, 255, 0.86);">Hãy nhấn <span style="color: aliceblue;">"Đăng ký"</span> nếu bạn đã đọc và đông ý với <a href="#">Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a> của chúng tôi. </p>
+							<input type="submit" id="register" name="register" value="Đăng ký" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Popup -->
 	</header>
 	<!--//header-->
 	
@@ -106,44 +167,53 @@
 
 				<!--three-fourth content-->
 					<section class="three-fourth">
-						<form id="booking" method="post" action="booking-step3.html" class="booking">
+						<form id="booking" method="post" action="booking" class="booking">
 							<fieldset>
-								<h3><span>01 </span>Thông tin liên hệ</h3>
-								<div class="row twins">
-									<div class="f-item">
-										<label for="name">Tên</label>
-										<input type="text" id="name" name="name" />
-									</div>
-									<div class="f-item">
-										<label for="phone">Phone</label>
-										<input type="text" id="phone" name="phone" />
-									</div>
+								<h3><span>03 </span>Đặt phòng thành công</h3>
+								<div class="text-wrap">
+									<p>Cảm ơn bạn. Đặt phòng của bạn bây giờ đã được xác nhận.</p>
 								</div>
 								
+								<h3>Thông tin khách hàng</h3>
+								<div class="text-wrap">
+									<div class="output">
+										<p>Họ tên khách hàng:</p>
+										<p>Lê Duy Linh</p>
+										<p>Địa chỉ email: </p>
+										<p>mail@google.com</p>
+										<p>Số điện thoại:</p>
+										<p>0388 424 474</p>
+									</div>
+								</div>
+							
+								<h3>Yêu cầu đặc biệt</h3>
+								<div class="text-wrap">
+									<p>Tôi muốn đặt một phòng đôi với tầm nhìn ra biển rõ ràng. Cảm ơn và trân trọng</p>
+								</div>
+								
+								<h3>Thanh toán</h3>
+								<div class="text-wrap">
+									<h5>Khách hàng sẽ <strong class="dark">thanh toán trực tiếp</strong> tại Homestay<br /><br /></h5>
+									<p><strong class="dark">Mọi thông tin chi tiết đã được chúng tôi gửi đến hòm thư email của bạn</strong></p>
+								</div>
+								<br /><br />
+								<h3>Đăng kí để nhận những ưu đãi hấp dẫn</h3>
 								<div class="row twins">
 									<div class="f-item">
-										<label for="email">Email address</label>
-										<input type="email" id="email" name="email" />
+										<form id="newsletter" action="newsletter.php" method="post">
+											<fieldset>
+												<input type="email" id="newsletter_signup" name="newsletter_signup" placeholder="Enter your email here" />
+												<input type="submit" id="newsletter_submit" name="newsletter_submit" value="Signup" class="gradient-button register" />
+											</fieldset>
+										</form>
 									</div>
-									<div class="f-item">
-										<label for="confirm_email">Confirm email address</label>
-										<input type="text" id="confirm_email" name="confirm_email" />
-									</div>
-									<span class="info">You’ll receive a confirmation email</span>
 								</div>
-								<div class="row">
-									<div class="f-item">
-										<label>Special requirements: <span>(Not Guaranteed)</span></label>
-										<textarea rows="10" cols="10"></textarea>
-									</div>
-									<!-- <span class="info">Please write your requests in English.</span> -->
-								</div>
-								<input type="submit" class="gradient-button" value="Đặt phòng" id="next-step" />
 							</fieldset>
 						</form>
+					
 					</section>
 				<!--//three-fourth content-->
-				
+			
 				<!--right sidebar-->
 				<aside class="right-sidebar">
 					<!--Booking details-->

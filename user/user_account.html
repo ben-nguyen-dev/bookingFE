@@ -47,8 +47,8 @@
 				<nav>
 					<ul class="profile-nav">
 						<li class="active"><a href="#" title="My Account">Tài khoản</a></li>
-						<li><a href="login.html" title="Register">Đăng ký</a></li>
-						<li><a href="register.html" title="Login">Đăng nhập</a></li>
+						<li><a href="#" class="register" title="Register">Đăng ký</a></li>
+						<li><a href="#" class="login" title="Login">Đăng nhập</a></li>
 					</ul>
 					<ul class="currency-nav">
 						<li class="active"><a href="#" title="Partners">Đối tác</a></li>
@@ -69,7 +69,7 @@
 			<!--contact-->
 			<div class="contact">
 				<span>24/7 Support number</span>
-				<span class="number">1- 555 - 555 - 555</span>
+				<span class="number">1800 1989</span>
 			</div>
 			<!--//contact-->
 		</div>
@@ -77,21 +77,79 @@
 		<!--main navigation-->
 		<nav class="main-nav" role="navigation" id="nav">
 			<ul class="wrap">
-				<li><a href="index.html" title="Home">Trang chủ</a></li>
-					<!-- <ul>
-						<li><a href="#">Secondary navigation</a></li>
-						<li><a href="#">example links</a></li>
-						<li><a href="error.html">Error page</a></li>
-						<li><a href="loading.html">Loading page</a></li>
-					</ul> -->
-				</li>
-				<li><a href="user_blog.html"  title="blog">blog</a></li>
-				<li><a href="#" title="hot deals">hot deals</a></li>
-				<li><a href="#" title="contact">Liên hệ</a></li>
-				<!-- <li><a href="#" title="homstay">.....</a></li> -->
+				<li class="active" ><a href="index.html" title="Home">Trang chủ</a></li>
+				<li ><a href="user_blog.html"  title="blog">Blog</a></li>
+				<li><a href="user_hot_deals.html" title="hot deals">Khuyến mại</a></li>
 			</ul>
 		</nav>
 		<!--//main navigation-->
+
+		<!-- Popup -->
+		<div class="popup">
+			<!-- Login -->
+			<div class="lightbox" id="login" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng nhập</h1>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="remember_me" name="checkbox" />
+								<label for="remember_me">Duy trì đăng nhập</label>
+							</div>
+							<p><a href="user_reset_password_step_1.html" title="Forgot password?">Quên mật khẩu?</a>
+								<br />
+								<span style="color: rgba(56, 209, 255, 0.86);" >Nếu bạn chưa có tài khoản?</span>
+								<a href="#" class="register" title="Sign up">Đăng ký</a></p>
+							<input type="submit" id="login" name="login" value="Đăng nhập" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- Register -->
+			<div class="lightbox" id="register" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng ký</h1>
+							<div class="f-item">
+								<label for="f_name">Họ và Tên</label>
+								<input type="text" id="f_name" name="f_name" />
+							</div>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item">
+								<label for="confirm_password">Nhập lại mật khẩu</label>
+								<input type="password" id="confirm_password" name="confirm_password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="newsletter" name="newsletter" />
+								<label for="newsletter">Thông báo cho tôi những ưu đãi độc quyền</label>
+							</div>
+							<p style="color: rgba(56, 209, 255, 0.86);">Hãy nhấn <span style="color: aliceblue;">"Đăng ký"</span> nếu bạn đã đọc và đông ý với <a href="#">Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a> của chúng tôi. </p>
+							<input type="submit" id="register" name="register" value="Đăng ký" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Popup -->
 	</header>
 	<!--//header-->
 	
@@ -121,7 +179,7 @@
 					<nav class="inner-nav">
 						<ul>
 							<li><a href="#MyHistorys" title="Bookings History">Lịch sử đặt phòng</a></li>
-							<li><a href="#MyReviews" title="My Booking">Phòng đang đặt</a></li>
+							<li><a href="#MyBookings" title="My Booking">Phòng đang đặt</a></li>
 							<li><a href="#MySettings" title="Settings">Cài đặt tài khoản</a></li>
 						</ul>
 					</nav>
@@ -139,41 +197,8 @@
 										<td>1 giường đơn</td>
 									</tr>
 									<tr>
-										<th>Ngày nhận phòng</th>
-										<td>23-05-20</td>
-									</tr>
-									<tr>
-										<th>Ngày trả phòng</th>
-										<td>30-05-20</td>
-									</tr>
-									<tr>
-										<th>Tổng tiền thanh toán</th>
-										<td><strong>200.000đ</strong></td>
-									</tr>
-									<tr>
-										<th>Trạng thái đặt phòng</th>
-										<td><strong>Đã thanh toán</strong></td>
-									</tr>
-								</table>
-							</div>
-							
-							<div class="actions">
-								<a href="#" class="gradient-button">Change booking</a>
-								<a href="#" class="gradient-button">Cancel booking</a>
-								<a href="#" class="gradient-button">View confirmation</a>
-								<a href="#" class="gradient-button">Print confirmation</a>
-							</div>
-						</article>
-						<!--//booking-->
-						
-						<!--booking-->
-						<article class="bookings">
-							<h1><a href="#">Tên Homestay</a></h1>
-							<div class="b-info">
-								<table>
-									<tr>
-										<th>Loại phòng</th>
-										<td>1 giường đơn</td>
+										<th>Số lượng phòng</th>
+										<td>1 phòng</td>
 									</tr>
 									<tr>
 										<th>Ngày nhận phòng</th>
@@ -211,6 +236,10 @@
 										<td>1 giường đơn</td>
 									</tr>
 									<tr>
+										<th>Số lượng phòng</th>
+										<td>1 phòng</td>
+									</tr>
+									<tr>
 										<th>Ngày nhận phòng</th>
 										<td>23-05-20</td>
 									</tr>
@@ -222,7 +251,11 @@
 										<th>Tổng tiền thanh toán</th>
 										<td><strong>200.000đ</strong></td>
 									</tr>
-									<tr id="rating" class="edit_field">
+									<tr>
+										<th>Trạng thái đặt phòng</th>
+										<td><strong>Đã hoàn thành</strong></td>
+									</tr>
+									<tr>
 										<th>Đánh giá</th>
 										<td>
 											<form action="">
@@ -250,7 +283,6 @@
 							<div class="actions">
 								<a href="#" class="gradient-button">Book again</a>
 								<a href="#" class="gradient-button">Remove from list</a>
-								<a href="#rating" class="gradient-button edit">Rating</a>
 							</div>
 						</article>
 						<!--//booking-->
@@ -263,6 +295,10 @@
 									<tr>
 										<th>Loại phòng</th>
 										<td>2 giường đơn</td>
+									</tr>
+									<tr>
+										<th>Số lượng phòng</th>
+										<td>1 phòng</td>
 									</tr>
 									<tr>
 										<th>Ngày nhận phòng</th>
@@ -278,15 +314,26 @@
 									</tr>
 									<tr>
 										<th>Trạng thái đặt phòng</th>
-										<td><strong>Đã thanh toán</strong></td>
+										<td><strong>Đã hoàn thành</strong></td>
 									</tr>
 									<tr>
-										<th>Trạng thái đặt phòng</th>
-										<td><strong>Đã thanh toán</strong></td>
-									</tr>
-									<tr>
-										<th>Trạng thái đặt phòng</th>
-										<td><strong>Đã thanh toán</strong></td>
+										<th>Đánh giá</th>
+										<td>
+											<!--Star rating-->
+											<dt>Star rating</dt>
+											<dd style="display: block; height: auto;">
+												<div id="star" data-rating="3" style="cursor: pointer; width: 130px;">
+													<img src="images/ico/star-rating-on.png" alt="1" title="bad">&nbsp;
+													<img src="images/ico/star-rating-on.png" alt="2" title="poor">&nbsp;
+													<img src="images/ico/star-rating-on.png" alt="3" title="regular">&nbsp;
+													<img src="images/ico/star-rating-off.png" alt="4" title="good">&nbsp;
+													<img src="images/ico/star-rating-off.png" alt="5" title="gorgeous">
+													<input type="hidden" name="score" value="3">
+												</div>
+											</dd>
+											<!--//Star rating-->
+											<textarea readonly="readonly" name="comment" id="comment" cols="10" rows="3">dfdgfdgfgf</textarea>
+										</td>
 									</tr>
 								</table>
 							</div>
@@ -302,164 +349,174 @@
 					
 					
 					<!--MyReviews-->
-					<section id="MyReviews" class="tab-content">
-						<article class="myreviews">
-							<h1>Your review of hotel Lorem ipsum hotel and spa</h1>
-							<div class="score">
-								<span class="achieved">8 </span>
-								<span> / 10</span>
+					<section id="MyBookings" class="tab-content">
+						<!--booking-->
+						<article class="bookings">
+							<h1><a href="#">Tên Homestay</a></h1>
+							<div class="b-info">
+								<table>
+									<tr>
+										<th>Loại phòng</th>
+										<td>1 giường đơn</td>
+									</tr>
+									<tr>
+										<th>Số lượng phòng</th>
+										<td>1 phòng</td>
+									</tr>
+									<tr>
+										<th>Ngày nhận phòng</th>
+										<td>23-05-20</td>
+									</tr>
+									<tr>
+										<th>Ngày trả phòng</th>
+										<td>30-05-20</td>
+									</tr>
+									<tr>
+										<th>Tổng tiền thanh toán</th>
+										<td><strong>200.000đ</strong></td>
+									</tr>
+									<tr>
+										<th>Trạng thái đặt phòng</th>
+										<td><strong>Đặt phòng thành công</strong></td>
+									</tr>
+								</table>
 							</div>
-							<div class="reviews">
-								<div class="pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
-								<div class="con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+							
+							<div class="actions">
+								<a href="#" class="gradient-button">Change booking</a>
+								<a href="#" class="gradient-button">Cancel booking</a>
+								<!-- <a href="#" class="gradient-button">View confirmation</a>
+								<a href="#" class="gradient-button">Print confirmation</a> -->
 							</div>
 						</article>
-						
-						<article class="myreviews">
-							<h1>Your review of hotel Lorem ipsum hotel and spa</h1>
-							<div class="score">
-								<span class="achieved">8 </span>
-								<span> / 10</span>
-							</div>
-							<div class="reviews">
-								<div class="pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
-								<div class="con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
-							</div>
-						</article>
-						
-						<article class="myreviews">
-							<h1>Your review of hotel Lorem ipsum hotel and spa</h1>
-							<div class="score">
-								<span class="achieved">8 </span>
-								<span> / 10</span>
-							</div>
-							<div class="reviews">
-								<div class="pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
-								<div class="con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
-							</div>
-						</article>
+						<!--//booking-->
 					</section>
 					<!--//MyReviews-->
 					
 					<!--MySettings-->
 					<section id="MySettings" class="tab-content">
 						<article class="mysettings">
-							<h1>Personal details</h1>
+							<h1>Thông tin của bạn</h1>
 							<table>
 								<tr>
-									<th>First name:</th>
-									<td>John
+									<th>Họ và Tên</th>
+									<td>Lê Duy Linh
 										<!--edit fields-->
 										<div class="edit_field" id="field1">
-											<label for="new_name">Your new name:</label>
-											<input type="text" id="new_name"/>
-											<input type="submit" value="save" class="gradient-button" id="submit1"/>
-											<a href="#">Cancel</a>
+											<form action="">
+												<label for="new_name">Nhập tên mới: </label>
+												<input type="text" id="name"/>
+												<input type="submit" value="Cập nhật" name="editUserName" class="gradient-button" id="editUserName"/>
+												<a href="#">Hủy</a>
+											</form>
 										</div>
 										<!--//edit fields-->
 									</td>
-									<td><a href="#field1" class="gradient-button edit">Edit</a></td>
+									<td><a href="#field1" class="gradient-button edit">Sửa</a></td>
 								</tr>
 								<tr>
-									<th>Last name:</th>
-									<td>Livingston
-										<!--edit fields-->
-										<div class="edit_field" id="field2">
-											<label for="new_last_name">Your new last name:</label>
-											<input type="text" id="new_last_name"/>
-											<input type="submit" value="save" class="gradient-button" id="submit2"/>
-											<a href="#">Cancel</a>
-										</div>
-										<!--//edit fields-->
-									</td>
-									<td><a href="#field2" class="gradient-button edit">Edit</a></td>
-								</tr>
-								<tr>
-									<th>E-mail address: </th>
+									<th>E-mail: </th>
 									<td>mail@google.com
 										<!--edit fields-->
-										<div class="edit_field" id="field3">
-											<label for="new_email">Your new email:</label>
-											<input type="text" id="new_email"/>
-											<input type="submit" value="save" class="gradient-button" id="submit3"/>
-											<a href="#">Cancel</a>
+										<div class="edit_field" id="field2">
+											<form action="">
+												<label for="new_name">Nhập địa chỉ email mới: </label>
+												<input type="text" id="name"/>
+												<input type="submit" value="Cập nhật" name="editEmail" class="gradient-button" id="editEmail"/>
+												<a href="#">Hủy</a>
+											</form>
 										</div>
 										<!--//edit fields-->
 									</td>
-									<td><a href="#field3" class="gradient-button edit">Edit</a></td>
+									<td><a href="#field2" class="gradient-button edit">Sửa</a></td>
 								</tr>
 								<tr>
 									<th>Password: </th>
-									<td>*********
+									<td>************
+										<!--edit fields-->
+										<div class="edit_field" id="field3">
+											<form action="">
+												<label for="new_name">Nhập mật khẩu cũ: </label>
+												<input type="password" id="name"/>
+												<label for="new_name">Nhập mật khẩu mới: </label>
+												<input type="password" id="name"/>
+												<label for="new_name">Nhập lại mật khẩu mới: </label>
+												<input type="password" id="name"/>
+												<input type="submit" value="Cập nhật" name="editPassword" class="gradient-button" id="editPassword"/>
+												<a href="#">Hủy</a>
+											</form>
+										</div>
+										<!--//edit fields-->
+									</td>
+									<td><a href="#field3" class="gradient-button edit">Sửa</a></td>
+								</tr>
+								<tr>
+									<th>Số điện thoại: </th>
+									<td>1800 1989
 										<!--edit fields-->
 										<div class="edit_field" id="field4">
-											<label for="new_password">Your new password:</label>
-											<input type="password" id="new_password"/>
-											<input type="submit" value="save" class="gradient-button" id="submit4"/>
-											<a href="#">Cancel</a>
+											<form action="">
+												<label for="new_name">Nhập số điện thoại mới: </label>
+												<input type="text" id="name"/>
+												<input type="submit" value="Cập nhật" name="editPhone" class="gradient-button" id="editPhone"/>
+												<a href="#">Hủy</a>
+											</form>
 										</div>
 										<!--//edit fields-->
 									</td>
-									<td><a href="#field4" class="gradient-button edit">Edit</a></td>
+									<td><a href="#field4" class="gradient-button edit">Sửa</a></td>
 								</tr>
 								<tr>
-									<th>Street Address and number:</th>
-									<td>Some street name 55
+									<th>Ảnh đại diện: </th>
+									<td>
+										<img src="images/uploads/avatar.jpg" alt="avatar">
 										<!--edit fields-->
 										<div class="edit_field" id="field5">
-											<label for="new_address">Your new address:</label>
-											<input type="text" id="new_address"/>
-											<input type="submit" value="save" class="gradient-button" id="submit5"/>
-											<a href="#">Cancel</a>
+											<form action="" enctype="multipart/form-data">
+												<label for="new_name">Chọn ảnh đại diện mới </label>
+												<input type="file" id="name"/><br/>
+												<input type="submit" value="Cập nhật" name="editAvatar" class="gradient-button" id="editAvatar"/>
+												<a href="#">Hủy</a>
+											</form>
 										</div>
 										<!--//edit fields-->
 									</td>
-									<td><a href="#field5" class="gradient-button edit">Edit</a></td>
+									<td><a href="#field5" class="gradient-button edit">Sửa</a></td>
 								</tr>
-								
 								<tr>
-									<th>Town / City: </th>
-									<td>Sunnytown
+									<th>Địa chỉ: </th>
+									<td>nhà 3c, Hoàng Mai, Hoàng Mai, Hà Nội
 										<!--edit fields-->
 										<div class="edit_field" id="field6">
-											<label for="new_city">Your new city:</label>
-											<input type="text" id="new_city"/>
-											<input type="submit" value="save" class="gradient-button" id="submit6"/>
-											<a href="#">Cancel</a>
+											<form action="">
+												<label for="address_detail">Địa chỉ(không bắt buộc):</label>
+												<textarea name="" id="address_detail" cols="10" rows="3"></textarea>
+												<label>Tỉnh/Thành Phố</label>
+												<select>
+													<option selected="selected">Chọn</option>
+													<option>Hà Nội</option>
+													<option>Hồ Chí Minh</option>
+												</select>
+												<label>Quận/Huyện</label>
+												<select>
+													<option selected="selected">Chọn</option>
+													<option>Đông Anh</option>
+													<option>Hai Bà Trưng</option>
+												</select>
+												<label>Phường/Xã</label>
+												<select>
+													<option selected="selected">Chọn</option>
+													<option>Hoàng Văn Thụ</option>
+													<option>Hoàng Mai</option>
+												</select>
+												<br/>
+												<input type="submit" value="Cập nhật" name="editPhone" class="gradient-button" id="editPhone"/>
+												<a href="#">Hủy</a>
+											</form>
 										</div>
 										<!--//edit fields-->
 									</td>
-									<td><a href="#field6" class="gradient-button edit">Edit</a></td>
-								</tr>
-								
-								<tr>
-									<th>ZIP code:</th>
-									<td>9500 - 100
-										<!--edit fields-->
-										<div class="edit_field" id="field7">
-											<label for="new_zip">Your new ZIP code:</label>
-											<input type="text" id="new_zip"/>
-											<input type="submit" value="save" class="gradient-button" id="submit7"/>
-											<a href="#">Cancel</a>
-										</div>
-										<!--//edit fields-->
-									</td>
-									<td><a href="#field7" class="gradient-button edit">Edit</a></td>
-								</tr>
-								
-								<tr>
-									<th>Country:</th>
-									<td>Neverland
-										<!--edit fields-->
-										<div class="edit_field" id="field8">
-											<label for="new_country">Your new country:</label>
-											<input type="text" id="new_country"/>
-											<input type="submit" value="save" class="gradient-button" id="submit8"/>
-											<a href="#">Cancel</a>
-										</div>
-										<!--//edit fields-->
-									</td>
-									<td><a href="#field8" class="gradient-button edit">Edit</a></td>
+									<td><a href="#field6" class="gradient-button edit">Sửa</a></td>
 								</tr>
 							</table>
 

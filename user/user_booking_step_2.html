@@ -32,21 +32,12 @@
 			<div class="ribbon">
 				<nav>
 					<ul class="profile-nav">
-						<li class="active"><a href="#" title="My Account">My Account</a></li>
-						<li><a href="login.html" title="Login">Login</a></li>
-						<li><a href="my_account.html" title="Settings">Settings</a></li>
-					</ul>
-					<ul class="lang-nav">
-						<li class="active"><a href="#" title="English (US)">English (US)</a></li>
-						<li><a href="#" title="English (UK)">English (UK)</a></li>
-						<li><a href="#" title="Deutsch">Deutsch</a></li>
-						<li><a href="#" title="Italiano">Italiano</a></li>
-						<li><a href="#" title="Русский">Русский</a></li>
+						<li class="active"><a href="#" title="My Account">Tài khoản</a></li>
+						<li><a href="#" class="register" title="Register">Đăng ký</a></li>
+						<li><a href="#" class="login" title="Login">Đăng nhập</a></li>
 					</ul>
 					<ul class="currency-nav">
-						<li class="active"><a href="#" title="$US Dollar">$US Dollar</a></li>
-						<li><a href="#" title="€ Euro">€ Euro</a></li>
-						<li><a href="#" title="£ Pound">£ Pound</a></li>
+						<li class="active"><a href="#" title="Partners">Đối tác</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -64,7 +55,7 @@
 			<!--contact-->
 			<div class="contact">
 				<span>24/7 Support number</span>
-				<span class="number">1- 555 - 555 - 555</span>
+				<span class="number">1800 1989</span>
 			</div>
 			<!--//contact-->
 		</div>
@@ -72,32 +63,79 @@
 		<!--main navigation-->
 		<nav class="main-nav" role="navigation" id="nav">
 			<ul class="wrap">
-				<li><a href="hotels.html" title="Hotels">Hotels</a>
-					<ul>
-						<li><a href="#">Secondary navigation</a></li>
-						<li><a href="#">example links</a></li>
-						<li><a href="error.html">Error page</a></li>
-						<li><a href="loading.html">Loading page</a></li>
-					</ul>
-				</li>
-				<li><a href="flights.html" title="Flights">Flights</a></li>
-				<li><a href="flight_and_hotels.html" title="Flight + Hotel">Flight + Hotel</a></li>
-				<li><a href="self_catering.html" title="Self catering">Self catering</a></li>
-				<li><a href="cruise.html" title="Cruises">Cruises</a></li>
-				<li><a href="car_rental.html" title="Car rental">Car rental</a></li>
-				<li><a href="hot_deals.html" title="Hot deals">Hot deals</a></li>
-				<li><a href="#" title="Vacations">Vacations</a></li>
-				<li><a href="#" title="Business travel">Business travel</a></li>
-				<li><a href="#" title="Group travel">Group travel</a></li>
-				<li><a href="get_inspired.html" title="Get inspired">Get inspired</a></li>
-				<li><a href="#" title="Travel guides">Travel guides</a>
-					<ul>
-						<li><a href="location.html">Location Details</a></li>
-					</ul>
-				</li>
+				<li class="active" ><a href="index.html" title="Home">Trang chủ</a></li>
+				<li ><a href="user_blog.html"  title="blog">Blog</a></li>
+				<li><a href="user_hot_deals.html" title="hot deals">Khuyến mại</a></li>
 			</ul>
 		</nav>
 		<!--//main navigation-->
+
+		<!-- Popup -->
+		<div class="popup">
+			<!-- Login -->
+			<div class="lightbox" id="login" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng nhập</h1>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="remember_me" name="checkbox" />
+								<label for="remember_me">Duy trì đăng nhập</label>
+							</div>
+							<p><a href="user_reset_password_step_1.html" title="Forgot password?">Quên mật khẩu?</a>
+								<br />
+								<span style="color: rgba(56, 209, 255, 0.86);" >Nếu bạn chưa có tài khoản?</span>
+								<a href="#" class="register" title="Sign up">Đăng ký</a></p>
+							<input type="submit" id="login" name="login" value="Đăng nhập" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- Register -->
+			<div class="lightbox" id="register" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng ký</h1>
+							<div class="f-item">
+								<label for="f_name">Họ và Tên</label>
+								<input type="text" id="f_name" name="f_name" />
+							</div>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item">
+								<label for="confirm_password">Nhập lại mật khẩu</label>
+								<input type="password" id="confirm_password" name="confirm_password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="newsletter" name="newsletter" />
+								<label for="newsletter">Thông báo cho tôi những ưu đãi độc quyền</label>
+							</div>
+							<p style="color: rgba(56, 209, 255, 0.86);">Hãy nhấn <span style="color: aliceblue;">"Đăng ký"</span> nếu bạn đã đọc và đông ý với <a href="#">Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a> của chúng tôi. </p>
+							<input type="submit" id="register" name="register" value="Đăng ký" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Popup -->
 	</header>
 	<!--//header-->
 	
@@ -111,17 +149,13 @@
 					<!--crumbs-->
 					<ul class="crumbs">
 						<li><a href="#" title="Home">Home</a></li>
-						<li><a href="#" title="Hotels">Hotels</a></li>
-						<li><a href="#" title="United Kingdom">United Kingdom</a></li>
-						<li><a href="#" title="London">London</a></li>  
-						<li>Best ipsum hotel</li>                                       
+						<li><a href="#" title="Hotels">Check out</a></li>                                  
 					</ul>
 					<!--//crumbs-->
 					
 					<!--top right navigation-->
 					<ul class="top-right-nav">
-						<li><a href="#" title="Back to results">Back to results</a></li>
-						<li><a href="#" title="Change search">Change search</a></li>
+						<li><a href="#" title="Back to results">Quay lại</a></li>
 					</ul>
 					<!--//top right navigation-->
 				</nav>
@@ -129,48 +163,20 @@
 
 				<!--three-fourth content-->
 					<section class="three-fourth">
-						<form id="booking" method="post" action="booking-step3.html" class="booking">
+						<form id="booking" method="post" action="user_booking_step_3.html" class="booking">
 							<fieldset>
-								<h3><span>02 </span>Payment</h3>
-								<div class="row twins">
-									<div class="f-item">
-										<label>Card type</label>
-										<select>
-											<option selected="selected">Select card type</option>
-											<option>Mastercard</option>
-											<option>Visa</option>
-											<option>American Express</option>
-										</select>
-									</div>
-									<div class="f-item">
-										<label for="card_number">Card number</label>
-										<input type="number" id="card_number" name="card_number" />
-									</div>
-								</div>
-								
-								<div class="row triplets">
-									<div class="f-item">
-										<label for="card_holder">Name on card</label>
-										<input type="text" id="card_holder" name="card_holder" />
-									</div>
-									<div class="f-item datepicker">
-										<label for="expiration_date">Expiration Date </label>
-										<div class="datepicker-wrap"><input type="text" id="expiration_date" name="expiration_date" /></div>
-									</div>
-									<div class="f-item last">
-										<label for="cv2_number">CV2 Number</label>
-										<input type="number" id="cv2_number" name="cv2_number" />
-									</div>
-								</div>
-
+								<h3><span>02 </span>Xác minh email</h3>
 								<div class="row">
-									<div class="f-item checkbox">
-										<input type="checkbox" name="check" id="check" value="ch1" />
-										<label>Yes, I have read and I agree to the <a href="#">booking conditions</a>.</label>
+									<div class="f-item">
+										<h5>Chúng tôi đã gửi mã xác nhận đến email của bạn( Nếu không phát hiện email, hãy kiểm tra trong hộp thư <strong>spam</strong>)</h5><br/>
 									</div>
 								</div>
-								<hr />
-								<input type="submit" class="gradient-button" value="Submit booking" id="next-step" />
+								<div class="row">
+									<div class="f-item">
+										<p>Nếu vẫn không nhận được email xác thực, hãy nhấp vào <strong>Gửi lại</strong> bên dưới </p>
+									</div>
+								</div>
+								<input type="submit" class="gradient-button" value="Gửi lại email xác minh" id="next-step" />
 							</fieldset>
 						</form>
 					</section>
@@ -180,7 +186,7 @@
 				<aside class="right-sidebar">
 					<!--Booking details-->
 					<article class="booking-details clearfix">
-						<h1>Best ipsum hotel 
+						<h1>Tên homestay
 							<span class="stars">
 								<img src="images/ico/star.png" alt="" />
 								<img src="images/ico/star.png" alt="" />
@@ -188,23 +194,34 @@
 								<img src="images/ico/star.png" alt="" />
 							</span>
 						</h1>
-						<span class="address">Marylebone, London</span>
-						<span class="rating"> 8 /10</span>
+						<span class="address">Hà Nội</span>
 						<div class="booking-info">
-							<h6>Rooms</h6>
-							<p>Standard twin room</p>
-							<h6>Room Description</h6>
-							<p>Room only</p>
-							<h6>Check-in Date</h6>
-							<p>14-11-12</p>
-							<h6>Check-out Date</h6>
-							<p>15-11-12</p>
-							<h6>Room(s)</h6>
-							<p>1 night, 1 room, max. 2 people. </p>
+							<h6>Loại phòng</h6>
+							<p>Phòng 1 giường đơn</p>
+							<h6>Số lượng</h6>
+							<p>1</p>
+							<h6>Ngày nhận phòng</h6>
+							<p>22/03/2020</p>
+							<h6>Ngày trả phòng</h6>
+							<p>23/03/2020</p>
+							<h6>Giá</h6>
+							<p>200.000đ</p>
+						</div>
+						<div class="booking-info">
+							<h6>Loại phòng</h6>
+							<p>Phòng 1 giường đơn</p>
+							<h6>Số lượng</h6>
+							<p>1</p>
+							<h6>Ngày nhận phòng</h6>
+							<p>22/03/2020</p>
+							<h6>Ngày trả phòng</h6>
+							<p>23/03/2020</p>
+							<h6>Giá</h6>
+							<p>200.000đ</p>
 						</div>
 						<div class="price">
-							<p class="total">Total Price:  $ 55,00</p>
-							<p>VAT (20%) included</p>
+							<p class="total">Tổng tiền: 400.000đ</p>
+							<p>Đã bao gồm VAT(10%)</p>
 						</div>
 					</article>
 					<!--//Booking details-->

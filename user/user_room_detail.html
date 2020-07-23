@@ -80,11 +80,11 @@
 				<nav>
 					<ul class="profile-nav">
 						<li class="active"><a href="#" title="My Account">Tài khoản</a></li>
-						<li><a href="login.html" title="Login">Đăng ký</a></li>
-						<li><a href="my_account.html" title="Settings">Cài đặt</a></li>
+						<li><a href="#" class="register" title="Register">Đăng ký</a></li>
+						<li><a href="#" class="login" title="Login">Đăng nhập</a></li>
 					</ul>
 					<ul class="currency-nav">
-						<li class="active"><a href="#" title="$US Dollar">Đối tác</a></li>
+						<li class="active"><a href="#" title="Partners">Đối tác</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -102,7 +102,7 @@
 			<!--contact-->
 			<div class="contact">
 				<span>24/7 Support number</span>
-				<span class="number">1- 555 - 555 - 555</span>
+				<span class="number">1800 1989</span>
 			</div>
 			<!--//contact-->
 		</div>
@@ -110,24 +110,82 @@
 		<!--main navigation-->
 		<nav class="main-nav" role="navigation" id="nav">
 			<ul class="wrap">
-				<li><a href="index.html" title="Home">Trang chủ</a></li>
-				<!-- <li><a href="hotels.html" title="Hotels">Hotels</a>
-					<ul>
-						<li><a href="#">Secondary navigation</a></li>
-						<li><a href="#">example links</a></li>
-						<li><a href="error.html">Error page</a></li>
-						<li><a href="loading.html">Loading page</a></li>
-					</ul>
-				</li> -->
-				<li><a href="#" title="homstay">homestay</a></li>
-				<li><a href="#" title="homstay">Tin tức</a></li>
-				<li><a href="#" title="homstay">Liên hệ</a></li>
-				<li><a href="#" title="homstay">.....</a></li>
+				<li class="active" ><a href="index.html" title="Home">Trang chủ</a></li>
+				<li ><a href="user_blog.html"  title="blog">Blog</a></li>
+				<li><a href="user_hot_deals.html" title="hot deals">Khuyến mại</a></li>
 			</ul>
 		</nav>
 		<!--//main navigation-->
+
+		<!-- Popup -->
+		<div class="popup">
+			<!-- Login -->
+			<div class="lightbox" id="login" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng nhập</h1>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="remember_me" name="checkbox" />
+								<label for="remember_me">Duy trì đăng nhập</label>
+							</div>
+							<p><a href="user_reset_password_step_1.html" title="Forgot password?">Quên mật khẩu?</a>
+								<br />
+								<span style="color: rgba(56, 209, 255, 0.86);" >Nếu bạn chưa có tài khoản?</span>
+								<a href="#" class="register" title="Sign up">Đăng ký</a></p>
+							<input type="submit" id="login" name="login" value="Đăng nhập" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- Register -->
+			<div class="lightbox" id="register" style="display:none;">
+				<div class="lb-wrap">
+					<a href="#" class="close">x</a>
+					<div class="lb-content">
+						<form>
+							<h1>Đăng ký</h1>
+							<div class="f-item">
+								<label for="f_name">Họ và Tên</label>
+								<input type="text" id="f_name" name="f_name" />
+							</div>
+							<div class="f-item">
+								<label for="email">Địa chỉ email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="f-item">
+								<label for="password">Mật khẩu</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div class="f-item">
+								<label for="confirm_password">Nhập lại mật khẩu</label>
+								<input type="password" id="confirm_password" name="confirm_password" />
+							</div>
+							<div class="f-item checkbox">
+								<input type="checkbox" id="newsletter" name="newsletter" />
+								<label for="newsletter">Thông báo cho tôi những ưu đãi độc quyền</label>
+							</div>
+							<p style="color: rgba(56, 209, 255, 0.86);">Hãy nhấn <span style="color: aliceblue;">"Đăng ký"</span> nếu bạn đã đọc và đông ý với <a href="#">Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a> của chúng tôi. </p>
+							<input type="submit" id="register" name="register" value="Đăng ký" class="gradient-button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Popup -->
 	</header>
 	<!--//header-->
+	
 	<!--main-->
 	<div class="main" role="main">		
 		<div class="wrap clearfix">
@@ -146,7 +204,7 @@
 					
 					<!--top right navigation-->
 					<ul class="top-right-nav">
-						<li><a href="search_results.html" title="Back to results">Back to results</a></li>
+						<li><a href="user_search_results.html" title="Back to results">Back to results</a></li>
 					</ul>
 					<!--//top right navigation-->
 				</nav>
@@ -161,10 +219,6 @@
 						<img src="images/slider/img3.jpg" alt="" width="850" height="531" />
 						<img src="images/slider/img4.jpg" alt="" width="850" height="531" />
 						<img src="images/slider/img5.jpg" alt="" width="850" height="531" />
-						<img src="images/slider/img6.jpg" alt="" width="850" height="531" />
-						<img src="images/slider/img7.jpg" alt="" width="850" height="531" />
-						<img src="images/slider/img8.jpg" alt="" width="850" height="531" />
-						<img src="images/slider/img9.jpg" alt="" width="850" height="531" />
 					</section>
 					<!--//gallery-->
 				
@@ -176,7 +230,6 @@
 							<li class="facilities"><a href="#facilities" title="Facilities">Cơ sỏ vật chất</a></li>
 							<li class="location"><a href="#location" title="Location">Vị trí</a></li>
 							<li class="reviews"><a href="#reviews" title="Reviews">Đánh giá</a></li>
-							<!-- <li class="things-to-do"><a href="#things-to-do" title="Things to do">Things to do</a></li> -->
 						</ul>
 					</nav>
 					<!--//inner navigation-->
@@ -186,7 +239,7 @@
 						<article>
 							<h1>Phòng có sẵn</h1>
 							<div class="text-wrap">
-								<a href="search_results.html" class="gradient-button right" title="Change dates">Đổi ngày</a>
+								<a href="user_search_results.html" class="gradient-button right" title="Change dates">Đổi ngày</a>
 								<p>Phòng có sẵn từ <span class="date">23/06/2020</span> đến <span class="date">24/06/2020</span>.</p>
 							</div>
 							
@@ -364,39 +417,34 @@
 					<!--description-->
 					<section id="description" class="tab-content">
 						<article>
-							<h1>General</h1>
+							<h1>Chung</h1>
 							<div class="text-wrap">	
-								<p>The Best Ipsum hotel  features over 1,000 luxuriously appointed, individually styled rooms, suites and apartments, each containing unique works of art. Accommodation at the hotel includes air conditioning in all the rooms, private bathroom with heated mirrors, hair dryer, power shower, BT Openzone Wi-Fi, coffee and tea making facilities, complimentary toiletries, Egyptian linen, flat Screen LCD TV with free view, work desk, 24 hour room service.</p>
+								<p>Khách sạn Best Ipsum có hơn 1.000 phòng, dãy phòng và căn hộ được thiết kế sang trọng, mỗi phòng đều có các tác phẩm nghệ thuật độc đáo. Chỗ ở tại khách sạn bao gồm máy lạnh trong tất cả các phòng, phòng tắm riêng có gương sưởi, máy sấy tóc, vòi hoa sen, Wi-Fi BT Openzone, tiện nghi pha cà phê và trà, đồ vệ sinh miễn phí, khăn trải giường Ai Cập, TV LCD màn hình phẳng với tầm nhìn miễn phí, bàn làm việc, dịch vụ phòng 24 giờ.</p>
 							</div>
 							
-							<h1>Check-in</h1>
+							<h1>Giờ nhận phòng</h1>
 							<div class="text-wrap">	
-								<p>From 15:00 hours </p>
+								<p>Từ 15:00 giờ </p>
 							</div>
 							
-							<h1>Check-out</h1>
+							<h1>Giờ trả phòng</h1>
 							<div class="text-wrap">	
-								<p>Untill 12:00 hours </p>
+								<p>Trước 12:00 giờ </p>
 							</div>
 							
-							<h1>Cancellation / Prepayment</h1>
+							<h1>Chính sách hủy phòng</h1>
 							<div class="text-wrap">	
-								<p>Cancellation and prepayment policies vary according to room type. Please check the <a href="#">room conditions</a> when selecting your room. </p>
+								<p>Chính sách hủy khác nhau tùy theo loại phòng. Vui lòng kiểm tra các <a href="user_terms_of_service.html">điều kiện phòng </a>khi chọn phòng của bạn. </p>
 							</div>
 							
-							<h1>Children and extra beds</h1>
+							<h1>Chính sách giành cho trẻ em</h1>
 							<div class="text-wrap">	
-								<p><strong>Free!</strong> All children under 8 years stay free of charge when using existing beds.<br /><strong>Free!</strong> All children under 2 years stay free of charge for children’s cots/cribs.<br /><br />All older children or adults are charged USD 40 per person per night for extra beds.<br />The maximum number of extra beds/children’s cots permitted in a room is 1.<br />Any type of extra bed or child’s cot/crib is upon request and needs to be confirmed by management.<br />Supplements are not calculated automatically in the total costs and will have to be paid for separately when checking out.</p>
+								<p><strong>Miễn phí!</strong> Với tất cả trẻ em dưới 140 cm.<br /><br />Tất cả trẻ em trên 140 cm đều được áp dụng chính sách dành cho người lớn<br /></p>
 							</div>
 							
-							<h1>Pets</h1>
+							<h1>Thú cưng</h1>
 							<div class="text-wrap">	
-								<p>Pets are allowed. Charges may be applicable.</p>
-							</div>
-							
-							<h1>Accepted credit cards</h1>
-							<div class="text-wrap">	
-								<p>American Express, Visa, Euro/Mastercard, Diners Club<br />The hotel reserves the right to pre-authorise credit cards prior to arrival.</p>
+								<p>Thú cưng được chấp nhận. Phí có thể được áp dụng, hãy liên hệ với chủ nhà</p>
 							</div>
 						</article>
 					</section>
@@ -405,12 +453,12 @@
 					<!--facilities-->
 					<section id="facilities" class="tab-content">
 						<article>
-							<h1>Facilities</h1>
+							<h1>Cơ sở vật chất</h1>
 							<div class="text-wrap">	
 								<ul class="three-col">
-									<li>Kitchenette</li>
-									<li>Ironing board</li>
-									<li>Catering services</li>
+									<li>Nhà bếp</li>
+									<li>Phòng tắm</li>
+									<li>Khăn tắm</li>
 									<li>Beachfront</li>
 									<li>Hotspots</li>
 									<li>Exhibition/convention floor</li>
@@ -426,19 +474,19 @@
 								</ul>
 							</div>
 							
-							<h1>Activities</h1>
+							<h1>Địa điểm lân cận</h1>
 							<div class="text-wrap">	
-								<p>Tennis court, Sauna, Fitness centre, Massage </p>
+								<p>Gần trung tâm, chợ, công an phường, các tụ điểm vui chơi,...</p>
 							</div>
 							
-							<h1>Internet</h1>
+							<h1>Mạng Internet</h1>
 							<div class="text-wrap">	
-								<p><strong>Free!</strong> WiFi is available in all areas and is free of charge. </p>
+								<p><strong>Miễn phí!</strong> Wifi có sẵn trong khu vực và hoàn toàn miễn phí</p>
 							</div>
 							
-							<h1>Parking</h1>
+							<h1>Nơi đỗ xe</h1>
 							<div class="text-wrap">	
-								<p>Private parking is possible at a location nearby (reservation is not needed) and costs USD 28.80 per day.</p>
+								<p><strong>Miễn phí!</strong> Nơi đỗ xe được bố trí miễn phí </p>
 							</div>
 						</article>
 					</section>
@@ -457,109 +505,92 @@
 					<!--reviews-->
 					<section id="reviews" class="tab-content">
 						<article>
-							<h1>Hotel Score and Score Breakdown</h1>
-							<div class="score">
-								<span class="achieved">8 </span>
-								<span> / 10</span>
-								<p class="info">Based on 782 reviews</p>
-								<p class="disclaimer">Guest reviews are written by our customers <strong>after their stay</strong> at Hotel Best Ipsum.</p>
-							</div>
-							
-							<dl class="chart">
-								<!-- <dt>Clean</dt>
-								<dd><span id="data-one" style="width:80%;">8&nbsp;&nbsp;&nbsp;</span></dd>
-								<dt>Comfort</dt>
-								<dd><span id="data-two" style="width:60%;">6&nbsp;&nbsp;&nbsp;</span></dd>
-								<dt>Location</dt>
-								<dd><span id="data-three" style="width:80%;">8&nbsp;&nbsp;&nbsp;</span></dd>
-								<dt>Staff</dt>
-								<dd><span id="data-four" style="width:100%;">10&nbsp;&nbsp;&nbsp;</span></dd>
-								<dt>Services</dt>
-								<dd><span id="data-five" style="width:70%;">7&nbsp;&nbsp;&nbsp;</span></dd>
-								<dt>Value for money</dt>
-								<dd><span id="data-six" style="width:90%;">9&nbsp;&nbsp;&nbsp;</span></dd> -->
-							</dl>
-						</article>
-						
-						<article>
-							<h1>Guest reviews</h1>
+							<h1>Đánh giá của du khách</h1>
 							<ul class="reviews">
 								<!--review-->
 								<li>
 									<figure class="left"><img src="images/uploads/avatar.jpg" alt="avatar" /></figure>
-									<address><span>Anonymous</span><br />Solo Traveller<br />Norway<br />22/06/2012</address>
-									<div class="pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
-									<div class="con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+									<address><span>Tên du khách</span><br /><br />22/06/2012</address>
+									<div class="pro">
+										<p class="stars">
+											<!-- <img src="images/ico/star-rating-off.png" alt="" /> -->
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+										</p>
+									</div>
+									<div class="con"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, inventore.</p></div>
 								</li>
 								<!--//review-->
-								
 								<!--review-->
 								<li>
 									<figure class="left"><img src="images/uploads/avatar.jpg" alt="avatar" /></figure>
-									<address><span>Anonymous</span><br />Solo Traveller<br />Norway<br />22/06/2012</address>
-									<div class="pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
-									<div class="con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+									<address><span>Tên du khách</span><br /><br />22/06/2012</address>
+									<div class="pro">
+										<p class="stars">
+											<!-- <img src="images/ico/star-rating-off.png" alt="" /> -->
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+										</p>
+									</div>
+									<div class="con"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, inventore.</p></div>
 								</li>
 								<!--//review-->
-								
 								<!--review-->
 								<li>
 									<figure class="left"><img src="images/uploads/avatar.jpg" alt="avatar" /></figure>
-									<address><span>Anonymous</span><br />Solo Traveller<br />Norway<br />22/06/2012</address>
-									<div class="pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
-									<div class="con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+									<address><span>Tên du khách</span><br /><br />22/06/2012</address>
+									<div class="pro">
+										<p class="stars">
+											<!-- <img src="images/ico/star-rating-off.png" alt="" /> -->
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+										</p>
+									</div>
+									<div class="con"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, inventore.</p></div>
 								</li>
 								<!--//review-->
-								
 								<!--review-->
 								<li>
 									<figure class="left"><img src="images/uploads/avatar.jpg" alt="avatar" /></figure>
-									<address><span>Anonymous</span><br />Solo Traveller<br />Norway<br />22/06/2012</address>
-									<div class="pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
-									<div class="con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+									<address><span>Tên du khách</span><br /><br />22/06/2012</address>
+									<div class="pro">
+										<p class="stars">
+											<!-- <img src="images/ico/star-rating-off.png" alt="" /> -->
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+										</p>
+									</div>
+									<div class="con"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, inventore.</p></div>
 								</li>
 								<!--//review-->
-								
 								<!--review-->
 								<li>
 									<figure class="left"><img src="images/uploads/avatar.jpg" alt="avatar" /></figure>
-									<address><span>Anonymous</span><br />Solo Traveller<br />Norway<br />22/06/2012</address>
-									<div class="pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
-									<div class="con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+									<address><span>Tên du khách</span><br /><br />22/06/2012</address>
+									<div class="pro">
+										<p class="stars">
+											<!-- <img src="images/ico/star-rating-off.png" alt="" /> -->
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+											<img src="images/ico/star.png" alt="" />
+										</p>
+									</div>
+									<div class="con"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, inventore.</p></div>
 								</li>
 								<!--//review-->
 							</ul>
 						</article>
 					</section>
 					<!--//reviews-->
-					
-					<!--things to do-->
-					<!-- <section id="things-to-do" class="tab-content">
-						<article>
-							<h1>London</h1>
-							<figure class="left_pic"><img src="images/uploads/img.jpg" alt="Things to do - London general" /></figure>
-							<p class="teaser">London is a diverse and exciting city with some of the best sights and attractions in the world. </p>
-							<p>See London from above on the London Eye; meet a celebrity at Madame Tussauds; examine some of the world’s most precious treasures at the British Museum or come face-to-face with the dinosaurs at the Natural History Museum.</p>
-							
-							<h1>Sports and nature</h1>
-							<figure class="left_pic"><img src="images/uploads/img.jpg" alt="Things to do - London Sports and nature" /></figure>
-							<p class="teaser">London is one of the greenest capitals in the world, with plenty of green and open spaces. There are more than 3000 open spaces.</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br />Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
-							
-							<h1>Nightlife</h1>
-							<figure class="left_pic"><img src="images/uploads/img.jpg" alt="Things to do - London Nightlife" /></figure>
-							<p class="teaser">Looking for nightclubs in London? Take a look at our guide to London clubs. Browse for club ideas, regular club nights and one-off events. </p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br />Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
-							
-							<h1>Culture and history</h1>
-							<figure class="left_pic"><img src="images/uploads/img.jpg" alt="Things to do - London general" /></figure>
-							<p class="teaser">For a display of British pomp and ceremony, watch the Changing the Guard ceremony outside Buckingham Palace.</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br />Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
-							<hr />
-							<a href="#" class="gradient-button right" title="Read more">Read more</a>
-						</article>
-					</section> -->
-					<!--//things to do-->
 				</section>
 				<!--//hotel content-->
 				
@@ -602,23 +633,6 @@
 									<img src="images/slider/img5.jpg" alt="" width="50" height="50" />
 									<a href="images/slider/img5.jpg" class="image-overlay" rel="prettyPhoto[gallery2]"></a>
 								</li>
-								<li>
-									<img src="images/slider/img6.jpg" alt="" width="50" height="50" />
-									<a href="images/slider/img6.jpg" class="image-overlay" rel="prettyPhoto[gallery2]"></a>
-								</li>
-								<li>
-									<img src="images/slider/img7.jpg" alt="" width="50" height="50" />
-									<a href="images/slider/img7.jpg" class="image-overlay" rel="prettyPhoto[gallery2]"></a>
-								</li>
-								<li>
-									<img src="images/slider/img8.jpg" alt="" width="50" height="50" />
-									<a href="images/slider/img8.jpg" class="image-overlay" rel="prettyPhoto[gallery2]"></a>
-								</li>
-								<li>
-									<img src="images/slider/img9.jpg" alt="" width="50" height="50" />
-									<a href="images/slider/img9.jpg" class="image-overlay" rel="prettyPhoto[gallery2]"></a>
-								</li>
-								
 							</ul>
 						</div>
 					</article>
@@ -643,7 +657,9 @@
 							</tr>
 							<tr>
 								<td>Phòng 1 giường đơn</td>
-								<td>1</td>
+								<td>
+									<input style="width: 30px;height: 10px;border-radius: unset;" min="0" type="number" name="number_room" id="number_room" value="1">
+								</td>
 								<td>200.000đ</td>
 								<td><a href="#">Xóa</a></td>
 							</tr>
@@ -653,9 +669,8 @@
 							</tr>
 
 						</table>
-						<a href="booking-step1.html" class="gradient-button" title="Book">Thanh toán</a>
-						</div>
-						
+						<a href="user_booking_step_1.html" class="gradient-button" title="Book">Thanh toán</a>
+						</div>	
 					</article>
 					<!--// Booking?-->
 
@@ -722,15 +737,15 @@
 							</li>
 							
 						</ul>
-						<a href="hot_deals.html" title="Show all" class="show-all">Show all</a>
+						<a href="user_hot_deals.html" title="Show all" class="show-all">Show all</a>
 					</article>
 					<!--//Popular hotels in the area-->
 					
 					<!--Deal of the day-->
 					<article class="default clearfix">	
-						<h2>Need Help Booking?</h2>
-						<p>Call our customer services team on the number below to speak to one of our advisors who will help you with all of your holiday needs.</p>
-						<p class="number">1- 555 - 555 - 555</p>
+						<h2>Hỗ trợ đặt phòng?</h2>
+						<p>Gọi cho nhóm dịch vụ khách hàng của chúng tôi theo số dưới đây để nói chuyện với một trong những cố vấn của chúng tôi, những người sẽ giúp bạn với tất cả các nhu cầu kỳ nghỉ của bạn.</p>
+						<p class="number">1800 1989</p>
 					</article>
 					<!--//Deal of the day-->
 				</aside>

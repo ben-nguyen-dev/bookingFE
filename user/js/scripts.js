@@ -126,6 +126,12 @@ $(document).ready(function () {
 	$('.close').click(function() {
 		$('.lightbox').hide();
 	});
+	$(".login").click(function() {
+		$("#login").css("display", "block");
+	});
+	$(".register").click(function() {
+		$("#register").css("display", "block");
+	});
 	
 	//MY ACCOUNT EDIT FIELDS
 	$('.edit_field').hide();
